@@ -1,0 +1,126 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Blank2005}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c64090c19de0db9990558831124189db}{%
+           family={Blank},
+           familyi={B\bibinitperiod},
+           given={Lars\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b2ea5566a2e44a25bc40526927f08928}{%
+           family={Kuepfer},
+           familyi={K\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a629d2f5e3c171a29e91a506aa3de7eb}{%
+           family={Sauer},
+           familyi={S\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{35bef250fc6060b904da78a29ddddad2}
+      \strng{fullhash}{35bef250fc6060b904da78a29ddddad2}
+      \strng{bibnamehash}{35bef250fc6060b904da78a29ddddad2}
+      \strng{authorbibnamehash}{35bef250fc6060b904da78a29ddddad2}
+      \strng{authornamehash}{35bef250fc6060b904da78a29ddddad2}
+      \strng{authorfullhash}{35bef250fc6060b904da78a29ddddad2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{issn}{1465-6906}
+      \field{journaltitle}{Genome Biology}
+      \field{number}{6}
+      \field{volume}{6}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{R49}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1186/gb-2005-6-6-r49
+      \endverb
+    \endentry
+    \entry{Chen2023}{article}{}
+      \name{author}{6}{}{%
+        {{hash=fb194450e9046854896c4ca5f2dc8d01}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=700bdb793cfa377095f0951b4b8578bc}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Tingting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=dfc6f7a4b00413383cf25590adf08077}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=515986e65bb4f1fb0079ff9ec137d695}{%
+           family={Zhuang},
+           familyi={Z\bibinitperiod},
+           given={Yingping},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ab497619937338874ecee8c1a9b543c9}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Jianye},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7367c4123d321556d38803b11cd83308}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{3cce370b13343d7e2f72b064e215fa8a}
+      \strng{fullhash}{f745cad46df0c553085f2cd291340313}
+      \strng{bibnamehash}{f745cad46df0c553085f2cd291340313}
+      \strng{authorbibnamehash}{f745cad46df0c553085f2cd291340313}
+      \strng{authornamehash}{3cce370b13343d7e2f72b064e215fa8a}
+      \strng{authorfullhash}{f745cad46df0c553085f2cd291340313}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1091-6490}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{6}
+      \field{number}{25}
+      \field{title}{Yeast increases glycolytic flux to support higher growth rates accompanied by decreased metabolite regulation and lower protein phosphorylation}
+      \field{volume}{120}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1073/pnas.2302779120
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

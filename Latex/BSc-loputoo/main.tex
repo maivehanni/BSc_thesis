@@ -1,0 +1,99 @@
+\documentclass[a4paper, 11pt]{report}
+
+\usepackage{taltech_bsc}
+
+\addbibresource{bibliography.bib}
+
+\begin{document}
+\begin{titlepage}
+    \includegraphics{taltech_logo.jpg}
+
+    \begin{center}
+        \vspace{35mm}
+        \begin{LARGE}
+            Flux balance analysis of continuous cultivation for investigating
+            the lipogenesis metabolism in \textit{Rhodotorula toruloides}
+        \end{LARGE} \\
+             Bachelor thesis
+
+        \vspace{30mm}
+        \hfill
+        \parbox{50mm}{
+            Student: Maive Hanni \\
+            Supervisor: Alina Rekena, Department of Chemistry and Biotechnology, Early Stage Researcher \\
+            Study program: Applied Chemistry and Gene Technology
+            }
+
+        \vfill
+        Tallinn 2024
+    \end{center}
+\end{titlepage}
+
+\begin{titlepage}
+    \includegraphics{logo.jpg}
+
+    \begin{center}
+        \vspace{35mm}
+        \begin{LARGE}
+            \textit{Rhodotorula toruloides} lipogeneesi uurimine, kasutades metaboolsete voogude analüüsi
+        \end{LARGE} \\
+            Bakaluareusetöö
+
+        \vspace{30mm}
+        \hfill
+        \parbox{50mm}{
+            Üliõpilane: Maive Hanni \\
+            Juhendaja: Alina Rekena, Keemia ja biotehnoloogia instituut, Doktorant-nooremteadur \\
+            Õppekava: Rakenduskeemia ja geenitehnoloogia
+            }
+
+        \vfill
+        Tallinn 2024
+    \end{center}
+\end{titlepage}
+
+\input{declaration.tex}
+
+\tableofcontents
+
+\pagenumbering{arabic} % alusta nummerdust siit
+\setcounter{page}{4}
+
+\input{abstract.tex}
+
+\input{annotatsioon.tex}
+
+\input{abbreviations_definitions.tex}
+
+\input{introduction.tex} %alates siit kuni lisadeni laheb sisukorda
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+             %Töö sisuline osa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{theoretical_background.tex}
+
+\input{aims_of_the_thesis.tex}
+
+\input{materials_and_methods.tex}
+
+\input{results.tex}
+
+\input{conclusions.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+             %Töö sisulise osa lõpp
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{summary.tex}
+
+\input{acknowledgements.tex} %k]ik lisad koos pealkirjadega tuuakse sisukorras v'lja, iga lisa algab eraldi lehek[ljelt]
+
+\newpage
+\printbibliography[title={References}]
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+
+\input{supplementary.tex}
+
+\end{document}
