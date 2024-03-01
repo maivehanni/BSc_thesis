@@ -82338,9 +82338,10 @@
 "metabolites":{
 "glc__D_e":-1.0
 },
-"lower_bound":-1.0,
-"upper_bound":999999.0,
+"lower_bound":-9999,
+"upper_bound":9999,
 "gene_reaction_rule":"",
+"objective_coefficient":1.0,
 "notes":{
 "original_bigg_ids":"[&apos;EX_glc_e_&apos;]"
 },
@@ -82716,7 +82717,6 @@
 "lower_bound":1.22,
 "upper_bound":999999.0,
 "gene_reaction_rule":"",
-"objective_coefficient":1.0,
 "notes":{
 "original_bigg_ids":"[&apos;ATPM&apos;]"
 },
@@ -82814,8 +82814,8 @@
 "zymst_r":-0.004156,
 "zymstest_RT_d":-1.7e-05
 },
-"lower_bound":0.0,
-"upper_bound":999999.0,
+"lower_bound":0.25,
+"upper_bound":0.25,
 "gene_reaction_rule":"",
 "notes":{
 "original_bigg_ids":"[&apos;biomass_SC5_notrace&apos;]"

@@ -1,0 +1,299 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Rekena2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=6245dd2d70baa892e0c8d4dd0b3eb2f6}{%
+           family={Reķēna},
+           familyi={R\bibinitperiod},
+           given={Alīna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9ff6e81cf927f35f60092d07f788ac50}{%
+           family={Pinheiro},
+           familyi={P\bibinitperiod},
+           given={Marina\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1db9e51485ca7e50066fee3b36f03409}{%
+           family={Bonturi},
+           familyi={B\bibinitperiod},
+           given={Nemailla},
+           giveni={N\bibinitperiod}}}%
+        {{hash=dc40ab904f0b16abc51d3a6441b2f866}{%
+           family={Belouah},
+           familyi={B\bibinitperiod},
+           given={Isma},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c098e5aa2ba0cb7778e1da01b0264818}{%
+           family={Tammekivi},
+           familyi={T\bibinitperiod},
+           given={Eliise},
+           giveni={E\bibinitperiod}}}%
+        {{hash=95282da92cc4bbb8d01131ab0350d332}{%
+           family={Herodes},
+           familyi={H\bibinitperiod},
+           given={Koit},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c1863fc4d0ea312ba80cf85f4b697ad6}{%
+           family={Kerkhoven},
+           familyi={K\bibinitperiod},
+           given={Eduard\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=834b35b58ff288384eb2b0693f85a803}{%
+           family={Lahtvee},
+           familyi={L\bibinitperiod},
+           given={Petri-Jaan},
+           giveni={P\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5fe4cab3cdad0afe6bfa1da6b4109af8}{%
+           family={Mahadevan},
+           familyi={M\bibinitperiod},
+           given={Radhakrishnan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science (PLoS)}%
+      }
+      \strng{namehash}{17909c237114b1a897ec06bf03970201}
+      \strng{fullhash}{b207f9efafcd870d25061b9fe9b9b61d}
+      \strng{bibnamehash}{17909c237114b1a897ec06bf03970201}
+      \strng{authorbibnamehash}{17909c237114b1a897ec06bf03970201}
+      \strng{authornamehash}{17909c237114b1a897ec06bf03970201}
+      \strng{authorfullhash}{b207f9efafcd870d25061b9fe9b9b61d}
+      \strng{editorbibnamehash}{5fe4cab3cdad0afe6bfa1da6b4109af8}
+      \strng{editornamehash}{5fe4cab3cdad0afe6bfa1da6b4109af8}
+      \strng{editorfullhash}{5fe4cab3cdad0afe6bfa1da6b4109af8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1553-7358}
+      \field{journaltitle}{PLOS Computational Biology}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Genome-scale metabolic modeling reveals metabolic trade-offs associated with lipid production in Rhodotorula toruloides}
+      \field{volume}{19}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{e1011009}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1011009
+      \endverb
+    \endentry
+    \entry{Tiukova2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c02518137c3f636c38f6203b8f27f289}{%
+           family={Tiukova},
+           familyi={T\bibinitperiod},
+           given={Ievgeniia\bibnamedelima A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b7de3052f2cbe695265e10a6ac3d1ecf}{%
+           family={Prigent},
+           familyi={P\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7367c4123d321556d38803b11cd83308}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1949d3c6da9527ef07092350186f2e11}{%
+           family={Sandgren},
+           familyi={S\bibinitperiod},
+           given={Mats},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c1863fc4d0ea312ba80cf85f4b697ad6}{%
+           family={Kerkhoven},
+           familyi={K\bibinitperiod},
+           given={Eduard\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{b6f21dfc6300314b89f8efa62ce734fc}
+      \strng{fullhash}{57180eee233a4bbf2fe1554192566db9}
+      \strng{bibnamehash}{57180eee233a4bbf2fe1554192566db9}
+      \strng{authorbibnamehash}{57180eee233a4bbf2fe1554192566db9}
+      \strng{authornamehash}{b6f21dfc6300314b89f8efa62ce734fc}
+      \strng{authorfullhash}{57180eee233a4bbf2fe1554192566db9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1097-0290}
+      \field{journaltitle}{Biotechnology and Bioengineering}
+      \field{month}{9}
+      \field{number}{12}
+      \field{title}{Genome‐scale model of Rhodotorula toruloides metabolism}
+      \field{volume}{116}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{3396\bibrangedash 3408}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1002/bit.27162
+      \endverb
+    \endentry
+    \entry{Kerkhoven2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c1863fc4d0ea312ba80cf85f4b697ad6}{%
+           family={Kerkhoven},
+           familyi={K\bibinitperiod},
+           given={Eduard\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=834b35b58ff288384eb2b0693f85a803}{%
+           family={Lahtvee},
+           familyi={L\bibinitperiod},
+           given={Petri-Jaan},
+           giveni={P\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=7367c4123d321556d38803b11cd83308}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{a13cc2708b4621854a048e65c46571f6}
+      \strng{fullhash}{a13cc2708b4621854a048e65c46571f6}
+      \strng{bibnamehash}{a13cc2708b4621854a048e65c46571f6}
+      \strng{authorbibnamehash}{a13cc2708b4621854a048e65c46571f6}
+      \strng{authornamehash}{a13cc2708b4621854a048e65c46571f6}
+      \strng{authorfullhash}{a13cc2708b4621854a048e65c46571f6}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1567-1356}
+      \field{journaltitle}{FEMS Yeast Research}
+      \field{month}{9}
+      \field{title}{Applications of computational modeling in metabolic engineering of yeast}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{n/a\bibrangedash n/a}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1111/1567-1364.12199
+      \endverb
+    \endentry
+    \entry{Voet1995}{book}{}
+      \name{author}{2}{}{%
+        {{hash=09ee2ab389ec811c4191b9c9ac79c002}{%
+           family={Voet},
+           familyi={V\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c10fbf40189eae93c8b225ea208d35c4}{%
+           family={Voet},
+           familyi={V\bibinitperiod},
+           given={Judith\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York [u.a.]}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{d77aba215ac587f1236938321482dab1}
+      \strng{fullhash}{d77aba215ac587f1236938321482dab1}
+      \strng{bibnamehash}{d77aba215ac587f1236938321482dab1}
+      \strng{authorbibnamehash}{d77aba215ac587f1236938321482dab1}
+      \strng{authornamehash}{d77aba215ac587f1236938321482dab1}
+      \strng{authorfullhash}{d77aba215ac587f1236938321482dab1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. rev. ed.}
+      \field{isbn}{047158651X}
+      \field{pagetotal}{1361}
+      \field{subtitle}{Donald}
+      \field{title}{Biochemistry (2nd ed.)}
+      \field{volume}{[Hauptbd.]}
+      \field{year}{1995}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Chen2023}{article}{}
+      \name{author}{6}{}{%
+        {{hash=fb194450e9046854896c4ca5f2dc8d01}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=700bdb793cfa377095f0951b4b8578bc}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Tingting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=dfc6f7a4b00413383cf25590adf08077}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=515986e65bb4f1fb0079ff9ec137d695}{%
+           family={Zhuang},
+           familyi={Z\bibinitperiod},
+           given={Yingping},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ab497619937338874ecee8c1a9b543c9}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Jianye},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7367c4123d321556d38803b11cd83308}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{3cce370b13343d7e2f72b064e215fa8a}
+      \strng{fullhash}{f745cad46df0c553085f2cd291340313}
+      \strng{bibnamehash}{f745cad46df0c553085f2cd291340313}
+      \strng{authorbibnamehash}{f745cad46df0c553085f2cd291340313}
+      \strng{authornamehash}{3cce370b13343d7e2f72b064e215fa8a}
+      \strng{authorfullhash}{f745cad46df0c553085f2cd291340313}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1091-6490}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{6}
+      \field{number}{25}
+      \field{title}{Yeast increases glycolytic flux to support higher growth rates accompanied by decreased metabolite regulation and lower protein phosphorylation}
+      \field{volume}{120}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1073/pnas.2302779120
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

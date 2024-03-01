@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.6)  31 JAN 2024 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.6)  1 MAR 2024 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Maive/Desktop/BSc lõputöö/Latex/BSc-loputoo/main.tex"
-(c:/Users/Maive/Desktop/BSc lõputöö/Latex/BSc-loputoo/main.tex
+**c:/Users/Maive/Desktop/BSc_loputoo/Thesis_paper_latex/main.tex
+(c:/Users/Maive/Desktop/BSc_loputoo/Thesis_paper_latex/main.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-01>
 (c:/texlive/2023/texmf-dist/tex/latex/base/report.cls
@@ -1004,10 +1004,10 @@ Package hyperref Info: Link coloring OFF on input line 7.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<./Joonised/taltech_logo.jpg, id=72, 159.651pt x 122.859pt>
-File: ./Joonised/taltech_logo.jpg Graphic file (type jpg)
-<use ./Joonised/taltech_logo.jpg>
-Package pdftex.def Info: ./Joonised/taltech_logo.jpg  used on input line 9.
+<./Pictures/taltech_logo.jpg, id=72, 159.651pt x 122.859pt>
+File: ./Pictures/taltech_logo.jpg Graphic file (type jpg)
+<use ./Pictures/taltech_logo.jpg>
+Package pdftex.def Info: ./Pictures/taltech_logo.jpg  used on input line 9.
 (pdftex.def)             Requested size: 159.6506pt x 122.85867pt.
 
 Underfull \hbox (badness 7907) in paragraph at lines 25--25
@@ -1027,11 +1027,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Joonised/taltech_logo.jpg>]
-<./Joonised/logo.jpg, id=81, 201.042pt x 158.994pt>
-File: ./Joonised/logo.jpg Graphic file (type jpg)
-<use ./Joonised/logo.jpg>
-Package pdftex.def Info: ./Joonised/logo.jpg  used on input line 33.
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Pictures/taltech_logo.jpg>]
+<./Pictures/logo.jpg, id=81, 201.042pt x 158.994pt>
+File: ./Pictures/logo.jpg Graphic file (type jpg)
+<use ./Pictures/logo.jpg>
+Package pdftex.def Info: ./Pictures/logo.jpg  used on input line 33.
 (pdftex.def)             Requested size: 201.0415pt x 158.9936pt.
 
 Underfull \hbox (badness 3291) in paragraph at lines 48--48
@@ -1043,7 +1043,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.53 \end{titlepage}
-                     [1 <./Joonised/logo.jpg>] (./declaration.tex)
+                     [1 <./Pictures/logo.jpg>] (./declaration.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1066,27 +1066,33 @@ l.57 \tableofcontents
 
 ]
 Chapter 1.
-) (./aims_of_the_thesis.tex [9
+[9
 
 ]
+<./Pictures/GEMs.png, id=159, 494.44725pt x 250.536pt>
+File: ./Pictures/GEMs.png Graphic file (type png)
+<use ./Pictures/GEMs.png>
+Package pdftex.def Info: ./Pictures/GEMs.png  used on input line 76.
+(pdftex.def)             Requested size: 441.01773pt x 223.46565pt.
+ [10] [11 <./Pictures/GEMs.png>]) (./aims_of_the_thesis.tex [12]
 Chapter 2.
-) (./materials_and_methods.tex [10
+) (./materials_and_methods.tex [13
 
 ]
 Chapter 3.
-) (./results.tex [11
+) (./results.tex [14
 
 ]
 Chapter 4.
-) (./conclusions.tex [12
+) (./conclusions.tex [15
 
 ]
 Chapter 5.
-) (./summary.tex [13
+) (./summary.tex [16
 
-]) (./acknowledgements.tex [14
+]) (./acknowledgements.tex [17
 
-]) [15
+]) [18
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 93.
@@ -1097,9 +1103,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./supplementary.tex [16
+ (./supplementary.tex [19
 
-]) [17
+]) [20
 
 ] (build/main.aux)
  ***********
@@ -1113,18 +1119,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27694 strings out of 474272
- 523986 string characters out of 5751548
- 1931533 words of memory out of 5000000
- 49444 multiletter control sequences out of 15000+600000
- 572904 words of font info for 97 fonts, out of 8000000 for 9000
+ 27798 strings out of 474272
+ 525601 string characters out of 5751548
+ 1933533 words of memory out of 5000000
+ 49476 multiletter control sequences out of 15000+600000
+ 576002 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,5n,95p,1105b,1896s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/main.pdf (17 pages, 258030 bytes).
+ 88i,6n,95p,1101b,1896s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on build/main.pdf (20 pages, 494717 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 27283 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 29336 words of extra memory for PDF output out of 29859 (max. 10000000)
 
