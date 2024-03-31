@@ -19,6 +19,218 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Li2007}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fa78c10f23d9e381cf755ae178f4f252}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yonghong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7aa79e2f54727b15c18993036cbdd01c}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zongbao\bibnamedelima (Kent)},
+           giveni={Z\bibinitperiod\bibinitdelim (\bibinitperiod}}}%
+        {{hash=05588b31c69f207d4d8e1ff6aff8349b}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Fengwu},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{402687e17c1b880c675a157dd1dc750f}
+      \strng{fullhash}{402687e17c1b880c675a157dd1dc750f}
+      \strng{bibnamehash}{402687e17c1b880c675a157dd1dc750f}
+      \strng{authorbibnamehash}{402687e17c1b880c675a157dd1dc750f}
+      \strng{authornamehash}{402687e17c1b880c675a157dd1dc750f}
+      \strng{authorfullhash}{402687e17c1b880c675a157dd1dc750f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0141-0229}
+      \field{journaltitle}{Enzyme and Microbial Technology}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{High-density cultivation of oleaginous yeast Rhodosporidium toruloides Y4 in fed-batch culture}
+      \field{volume}{41}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{312\bibrangedash 317}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.enzmictec.2007.02.008
+      \endverb
+    \endentry
+    \entry{Tiukova2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c02518137c3f636c38f6203b8f27f289}{%
+           family={Tiukova},
+           familyi={T\bibinitperiod},
+           given={Ievgeniia\bibnamedelima A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b7de3052f2cbe695265e10a6ac3d1ecf}{%
+           family={Prigent},
+           familyi={P\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7367c4123d321556d38803b11cd83308}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1949d3c6da9527ef07092350186f2e11}{%
+           family={Sandgren},
+           familyi={S\bibinitperiod},
+           given={Mats},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c1863fc4d0ea312ba80cf85f4b697ad6}{%
+           family={Kerkhoven},
+           familyi={K\bibinitperiod},
+           given={Eduard\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{b6f21dfc6300314b89f8efa62ce734fc}
+      \strng{fullhash}{57180eee233a4bbf2fe1554192566db9}
+      \strng{bibnamehash}{57180eee233a4bbf2fe1554192566db9}
+      \strng{authorbibnamehash}{57180eee233a4bbf2fe1554192566db9}
+      \strng{authornamehash}{b6f21dfc6300314b89f8efa62ce734fc}
+      \strng{authorfullhash}{57180eee233a4bbf2fe1554192566db9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1097-0290}
+      \field{journaltitle}{Biotechnology and Bioengineering}
+      \field{month}{9}
+      \field{number}{12}
+      \field{title}{Genome‐scale model of Rhodotorula toruloides metabolism}
+      \field{volume}{116}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{3396\bibrangedash 3408}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1002/bit.27162
+      \endverb
+    \endentry
+    \entry{Buzzini2007}{article}{}
+      \name{author}{6}{}{%
+        {{hash=77c8936174c4375c6b2fac23a42e8e6c}{%
+           family={Buzzini},
+           familyi={B\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fce55df57f3f9550e9c02dc9a5e17d67}{%
+           family={Innocenti},
+           familyi={I\bibinitperiod},
+           given={Marzia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d694802eec8c6e6b26b1473762ed8e2}{%
+           family={Turchetti},
+           familyi={T\bibinitperiod},
+           given={Benedetta},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b1fa5f48a5fe2f2ff1dd74e35da24b14}{%
+           family={Libkind},
+           familyi={L\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ea19ab204a15940ec88585ff96bb0a47}{%
+           family={Broock},
+           familyi={B\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=77556b9a7eee2cc240c23fa5b1b33523}{%
+           family={Mulinacci},
+           familyi={M\bibinitperiod},
+           given={Nadia},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Canadian Science Publishing}%
+      }
+      \strng{namehash}{18aec6e878ed890d003ba2923548b922}
+      \strng{fullhash}{336ab620c0dc8736c10af40a8f6ac662}
+      \strng{bibnamehash}{336ab620c0dc8736c10af40a8f6ac662}
+      \strng{authorbibnamehash}{336ab620c0dc8736c10af40a8f6ac662}
+      \strng{authornamehash}{18aec6e878ed890d003ba2923548b922}
+      \strng{authorfullhash}{336ab620c0dc8736c10af40a8f6ac662}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1480-3275}
+      \field{journaltitle}{Canadian Journal of Microbiology}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Carotenoid profiles of yeasts belonging to the genera Rhodotorula, Rhodosporidium, Sporobolomyces, and Sporidiobolus}
+      \field{volume}{53}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{1024\bibrangedash 1031}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1139/w07-068
+      \endverb
+    \endentry
+    \entry{Vorapreeda2012}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a1c7dc02918a427585e1eff453c29b4b}{%
+           family={Vorapreeda},
+           familyi={V\bibinitperiod},
+           given={Tayvich},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8195cd5e46de80e3bd3a46160c5cfe83}{%
+           family={Thammarongtham},
+           familyi={T\bibinitperiod},
+           given={Chinae},
+           giveni={C\bibinitperiod}}}%
+        {{hash=43c26c3aa5b46ce1db0baee2d001a6a2}{%
+           family={Cheevadhanarak},
+           familyi={C\bibinitperiod},
+           given={Supapon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5d1c05aac9e20019941992762d966ad1}{%
+           family={Laoteng},
+           familyi={L\bibinitperiod},
+           given={Kobkul},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Microbiology Society}%
+      }
+      \strng{namehash}{7bfcf0ca02cdc936e2544aa6a9c0d8da}
+      \strng{fullhash}{18aeb7586f32d64ef42d5498209db4b3}
+      \strng{bibnamehash}{18aeb7586f32d64ef42d5498209db4b3}
+      \strng{authorbibnamehash}{18aeb7586f32d64ef42d5498209db4b3}
+      \strng{authornamehash}{7bfcf0ca02cdc936e2544aa6a9c0d8da}
+      \strng{authorfullhash}{18aeb7586f32d64ef42d5498209db4b3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1465-2080}
+      \field{journaltitle}{Microbiology}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Alternative routes of acetyl-CoA synthesis identified by comparative genomic analysis: involvement in the lipid production of oleaginous yeast and fungi}
+      \field{volume}{158}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{217\bibrangedash 228}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1099/mic.0.051946-0
+      \endverb
+    \endentry
     \entry{Rekena2023}{article}{}
       \name{author}{8}{}{%
         {{hash=6245dd2d70baa892e0c8d4dd0b3eb2f6}{%
@@ -81,8 +293,8 @@
       \strng{editorbibnamehash}{5fe4cab3cdad0afe6bfa1da6b4109af8}
       \strng{editornamehash}{5fe4cab3cdad0afe6bfa1da6b4109af8}
       \strng{editorfullhash}{5fe4cab3cdad0afe6bfa1da6b4109af8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1553-7358}
@@ -99,59 +311,44 @@
       \verb 10.1371/journal.pcbi.1011009
       \endverb
     \endentry
-    \entry{Tiukova2019}{article}{}
-      \name{author}{5}{}{%
-        {{hash=c02518137c3f636c38f6203b8f27f289}{%
-           family={Tiukova},
-           familyi={T\bibinitperiod},
-           given={Ievgeniia\bibnamedelima A.},
-           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=b7de3052f2cbe695265e10a6ac3d1ecf}{%
-           family={Prigent},
-           familyi={P\bibinitperiod},
-           given={Sylvain},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7367c4123d321556d38803b11cd83308}{%
-           family={Nielsen},
-           familyi={N\bibinitperiod},
-           given={Jens},
+    \entry{Lian2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2789f88c6653b83053bef29f6d4e250b}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Jiazhang},
            giveni={J\bibinitperiod}}}%
-        {{hash=1949d3c6da9527ef07092350186f2e11}{%
-           family={Sandgren},
-           familyi={S\bibinitperiod},
-           given={Mats},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c1863fc4d0ea312ba80cf85f4b697ad6}{%
-           family={Kerkhoven},
-           familyi={K\bibinitperiod},
-           given={Eduard\bibnamedelima J.},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=df6f80746582273aa2a38e11439ad9fb}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huimin},
+           giveni={H\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Wiley}%
+        {Oxford University Press (OUP)}%
       }
-      \strng{namehash}{b6f21dfc6300314b89f8efa62ce734fc}
-      \strng{fullhash}{57180eee233a4bbf2fe1554192566db9}
-      \strng{bibnamehash}{57180eee233a4bbf2fe1554192566db9}
-      \strng{authorbibnamehash}{57180eee233a4bbf2fe1554192566db9}
-      \strng{authornamehash}{b6f21dfc6300314b89f8efa62ce734fc}
-      \strng{authorfullhash}{57180eee233a4bbf2fe1554192566db9}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{b7eaca81378358cad9cd495b206ea2e3}
+      \strng{fullhash}{b7eaca81378358cad9cd495b206ea2e3}
+      \strng{bibnamehash}{b7eaca81378358cad9cd495b206ea2e3}
+      \strng{authorbibnamehash}{b7eaca81378358cad9cd495b206ea2e3}
+      \strng{authornamehash}{b7eaca81378358cad9cd495b206ea2e3}
+      \strng{authorfullhash}{b7eaca81378358cad9cd495b206ea2e3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1097-0290}
-      \field{journaltitle}{Biotechnology and Bioengineering}
-      \field{month}{9}
-      \field{number}{12}
-      \field{title}{Genome‐scale model of Rhodotorula toruloides metabolism}
-      \field{volume}{116}
-      \field{year}{2019}
+      \field{issn}{1367-5435}
+      \field{journaltitle}{Journal of Industrial Microbiology and Biotechnology}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Recent advances in biosynthesis of fatty acids derived products in Saccharomyces cerevisiae via enhanced supply of precursor metabolites}
+      \field{volume}{42}
+      \field{year}{2015}
       \field{dateera}{ce}
-      \field{pages}{3396\bibrangedash 3408}
-      \range{pages}{13}
+      \field{pages}{437\bibrangedash 451}
+      \range{pages}{15}
       \verb{doi}
-      \verb 10.1002/bit.27162
+      \verb 10.1007/s10295-014-1518-0
       \endverb
     \endentry
     \entry{Kerkhoven2014}{article}{}
@@ -181,8 +378,8 @@
       \strng{authorbibnamehash}{a13cc2708b4621854a048e65c46571f6}
       \strng{authornamehash}{a13cc2708b4621854a048e65c46571f6}
       \strng{authorfullhash}{a13cc2708b4621854a048e65c46571f6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1567-1356}
@@ -222,8 +419,8 @@
       \strng{authorbibnamehash}{d77aba215ac587f1236938321482dab1}
       \strng{authornamehash}{d77aba215ac587f1236938321482dab1}
       \strng{authorfullhash}{d77aba215ac587f1236938321482dab1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2. rev. ed.}
@@ -293,7 +490,42 @@
       \verb 10.1073/pnas.2302779120
       \endverb
     \endentry
+    \entry{Kerkhoven2022}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c1863fc4d0ea312ba80cf85f4b697ad6}{%
+           family={Kerkhoven},
+           familyi={K\bibinitperiod},
+           given={Eduard\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{c1863fc4d0ea312ba80cf85f4b697ad6}
+      \strng{fullhash}{c1863fc4d0ea312ba80cf85f4b697ad6}
+      \strng{bibnamehash}{c1863fc4d0ea312ba80cf85f4b697ad6}
+      \strng{authorbibnamehash}{c1863fc4d0ea312ba80cf85f4b697ad6}
+      \strng{authornamehash}{c1863fc4d0ea312ba80cf85f4b697ad6}
+      \strng{authorfullhash}{c1863fc4d0ea312ba80cf85f4b697ad6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1369-5274}
+      \field{journaltitle}{Current Opinion in Microbiology}
+      \field{month}{8}
+      \field{title}{Advances in constraint-based models: methods for improved predictive power based on resource allocation constraints}
+      \field{volume}{68}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{102168}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.mib.2022.102168
+      \endverb
+    \endentry
   \enddatalist
+  \missing{Thiele2010}
 \endrefsection
 \endinput
 

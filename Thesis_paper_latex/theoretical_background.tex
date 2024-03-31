@@ -1,31 +1,34 @@
 \chapter{Theoretical background}
 
-\section{\textit{Rhodotorula toruloides}}
+\section{\textit{Rhodotorula toruloides}} 
 
-\textit{Rhodotorula toruloides} (previously \textit{Rhodosporidium toruloides}) is a non-conventional, oleaginous yeast, 
-that can naturally accumulate
-high amounts of lipids \cite{Rekena2023}. This yeast occurs naturally in leaves, soil, sea water, etc. It has a broad substrate range, 
+Microorganisms that can accumulate lipids at more than 20\%
+of their dry biomass weight are defined as oleaginous. \textit{Rhodotorula toruloides} (previously \textit{Rhodosporidium toruloides}) is an oleaginous yeast
+which can accumulate lipids up to 76.1\% of cell dry weight \cite{Li2007}. The majority of the lipids produced by that yeast are
+triacylglycerol (TAG) contained long-chain fatty acids and they
+are comparable to vegetable oils. \cite{Li2007}
+
+This yeast occurs naturally in leaves, soil, sea water, etc. It has a broad substrate range, 
 which has made this yeast a popular for producing biological oils from inedible 
-substrates such as pentose sugars and crude glycerol.\textit{R. toruloides} lipid fraction contains also carotenoid pigments, 
+substrates such as pentose sugars and crude glycerol. \cite{Tiukova2019} 
+\textit{R. toruloides} lipid fraction contains also carotenoid pigments, 
 omega-3 linolenic acid and heptadecenoic acid,
-which makes this yeast a promising organism for production of pharma- and nutraceuticals \cite{Tiukova2019}. 
-It has been found that nitrogen limitation further induces lipid accumulation, 
-65\% of lipids of dry cell weight were reached in a batch cultivation regime \cite{Rekena2023}.
+which makes this yeast a promising organism for production of pharma- and nutraceuticals \cite{Buzzini2007}. 
 
-One of the major determinants of the oleaginous phenotype of \textit{R. toruloides} is its capacity for acetylCoA production. 
-Unlike non-oleaginous yeasts such as \textit{Saccharomyces cerevisiae}, \textit{R. toruloides} possesses the enzyme ATP-citrate lyase, 
-which is the main source of acetyl-CoA for lipid
-synthesis. Mitochondrial beta-oxidation pathway provides additional source of acetylCoA in this yeast. \cite{Tiukova2019}
+One of the major determinants of the oleaginous phenotype of \textit{R. toruloides} is its capacity for acetyl-coenzyme A (acetyl-CoA) production. 
+\textit{R. toruloides} possesses the enzyme ATP-citrate lyase (ACL), 
+which has been suggested to be the main source of acetyl-CoA for lipid
+synthesis in oleaginous species, as it has not been found to be present in non-oleaginous yeasts \cite{Vorapreeda2012}. Mitochondrial beta-oxidation pathway provides additional source of acetyl-CoA in \textit{R. toruloides}. \cite{Tiukova2019}
 Synthesis of acetyl-CoA from xylulose 5-phosphate by phosphoketolase (XPK), and the conversion of S-malate into pyruvate by 
-malic enzyme (ME) that provides for NADPH enzymatic pathways also differ from the model yeast \textit{Saccharomyces
+malic enzyme (ME) that provides for nicotinamide adenine dinucleotide phosphate (NADPH) enzymatic pathways, also differ from the model yeast \textit{Saccharomyces
 cerevisiae} and which specifically facilitate the generation of lipid precursors.\cite{Rekena2023}
 Lipid biosynthetic reactions downstream of acetyl-CoA synthesis do not differ between oleaginous and non-oleaginous 
 yeast species \cite{Tiukova2019}.
 
 In \textit{R. toruloides} metabolic pathways producing acetyl-CoA and a cofactor NADPH
 have been the main focus of metabolic studies due to their central role in lipid
-biosynthesis. Fatty acids mainly accumulate as triacylglycerols (TAGs), and they are
-produced via four enzymatic reactions that require 1 ATP and 2 NADPH molecules for adding 1 acetyl-CoA to the fatty acid chain.
+biosynthesis. Fatty acids mainly accumulate as TAGs, and they are
+produced via four enzymatic reactions that require 1 ATP and 2 NADPH molecules for adding 1 acetyl-CoA to the fatty acid chain \cite{Lian2015}.
 Proteomics analysis has suggested that NADPH is primarily regenerated through the pentose phosphate pathway, when grown on xylose 
 and glucose, but the role of malic enzyme is not clearly understood. The
 role of XPK in the generation of acetyl-CoA has not been acknowledged previously, whereas
@@ -51,20 +54,25 @@ rely on balancing of intracellular metabolites using genome-scale models (GEMs) 
 combination with appropriate objective functions and constraints can be used to predict potential gene 
 targets for obtaining a preferred flux distribution. \cite{Kerkhoven2014} 
 
-Genome-scale metabolic models are comprehensive summaries of metabolic reactions of a
-organism, which are derived from the organism's genome sequence \cite{Tiukova2019}. GEMs are organism specific and they account for genes,
- proteins, and biochemical reactions, which enable systematic
+Metabolic network reconstructions has become a very important tool for studying the systems biology of metabolism. 
+The number of organisms for which metabolic reconstructions have been created is increasing at a pace similar to whole genome sequencing. \cite{Thiele2010}
+These reconstructions represent structured knowledge-bases that contain information about the biochemical transformations within specific target organisms and they can be converted into mathematical models. The mathematical model can be used, for example, to simulate maximal growth of a cell in a given environmental condition using flux balance analysis (FBA). \cite{Thiele2010}
+
+In other words, genome-scale metabolic models are comprehensive summaries of metabolic reactions of a
+organism, which are derived from the organism's genome sequence \cite{Tiukova2019}. 
+GEMs are organism specific and they account for genes,
+proteins, and biochemical reactions, which enable systematic
 analysis of metabolism, where typically
 the objective is to achieve a global picture of possible flux
 patterns \cite{Kerkhoven2014}, \cite{Chen2023}. GEMs can be a powerful and helpful tool in metabolic studies, if their predictive 
 power is
-good \cite{Rekena2023}. They can be used for identification of potential metabolic engineering targets, or select the best
-performing metabolic network among alternatives.
+good \cite{Rekena2023}. They can be used for identification of potential metabolic engineering targets.
 The first genome-scale model of \textit{R. toruloides} metabolism (rhto-GEM), includes 4869 genes, 
 897 reactions, and 3334
 metabolites. The simulation results confirmed that the \textit{R. toruloides} model provides valid growth predictions on glucose, 
 xylose and glycerol. This makes rtho-GEM useful for future studies to improve the production of other
 industrially important oleochemicals including both value-added fatty acids and carotenoids. \cite{Tiukova2019}
+
 
 The reconstructed networks can be converted into mathematical stoichiometric matrices, where rows represent metabolites 
 and columns represent individual reactions. This matrix will
@@ -94,7 +102,7 @@ Metabolism operates under countless of constraints. These include constraints th
 remain unchanged as they abide by the laws of physics (e.g. conservation of mass and energy, thermodynamics), 
 and constraints that can vary by organism, environmental condition, the state of the 
 cell (e.g. nutrient uptake rate, biomass composition), and constraints that can also change through evolution or 
-changes in gene expression [Citation]. %\cite{Kerkhoven2022}
+changes in gene expression. \cite{Kerkhoven2022}
 
 A major limitation in the predictive power of conventional GEMs is that they ignore the capacity of a 
 cell to support a metabolic flux is constrained by its resource allocation, as most metabolic reactions are 
@@ -102,7 +110,7 @@ catalyzed by enzymes. The synthesis of enzymes is resource- and energy-expensive
 capacities are limited by their kinetics, also the quantity of enzymes is space-constraint, such that 
 stringency in resource allocation is vital for optimal cell growth. The modeling problem of resource allocation can 
 be narrowly defined by only considering protein allocation: “given a certain budget, what is the best way to distribute 
-it”, where budget refers to the total cellular protein level that is distributed over all its constituent proteins. [Citation] %\cite{Kerkhoven2022}
+it”, where budget refers to the total cellular protein level that is distributed over all its constituent proteins. \cite{Kerkhoven2022}
 
 This means that an increase in the requirement of an enzyme or a pathway would be a trade-off for other
 functions. Experimental evidence indicates that for various organisms resource re-allocation could be an effective strategy 
@@ -111,7 +119,7 @@ of proteome constraints. \cite{Chen2023}
 Applying such constraints in a metabolism model reduces simulated flux distributions to those that are most 
 economic and also limits the phenotypes that the model can simulate. These both contribute to more realistic results. 
 Such models have already found numerous applications in e.g. unraveling the underlying mechanisms for observed metabolic 
-phenotypes and the prediction of strain optimization strategies.[Citation] %\cite{Kerkhoven2022}
+phenotypes and the prediction of strain optimization strategies. \cite{Kerkhoven2022}
 This suggests that proteome constraints could be a valuable addition to GEMs to
 improve model predictions \cite{Chen2023}. 
 
@@ -132,7 +140,7 @@ enzymatic constraints in \textit{S. cerevisiae} has significantly improved pheno
 
 % GEMs can simulate metabolic flux distributions by optimization of an objective function that describes the 
 % perceived cellular objective that propels 
-% metabolism, by flux balance analysis (FBA). %\cite{Kerkhoven2022}
+% metabolism, by flux balance analysis (FBA). \cite{Kerkhoven2022}
 
 Flux balance analysis (FBA) is commonly used for adding additional constraints, where an
 assumed biological objective is applied in the form of maximizing (or minimizing) a certain flux. This results in
@@ -152,7 +160,7 @@ contextualizing high-throughput data;
 % the number of active fluxes to yield the most efficient 
 % flux distribution. Parsimonious FBA is an example of a computational approach that can find such minimal 
 % flux distributions by removing loops and thereby partially alleviates the protein allocation problem, but more 
-% advanced approaches have since been developed. %\cite{Kerkhoven2022}
+% advanced approaches have since been developed. \cite{Kerkhoven2022}
 
 % GEMs and FBA can be applied to identify potential metabolic engineering strategies, or even select the best 
 % performing network among alternatives. There have been

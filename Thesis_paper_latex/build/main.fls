@@ -352,12 +352,12 @@ INPUT summary.tex
 INPUT ./acknowledgements.tex
 INPUT ./acknowledgements.tex
 INPUT acknowledgements.tex
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/eccc1095.tfm
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT ./supplementary.tex
 INPUT ./supplementary.tex
 INPUT supplementary.tex

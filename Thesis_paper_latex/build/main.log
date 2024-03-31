@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.6)  1 MAR 2024 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.6)  25 MAR 2024 11:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -943,7 +943,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (build/main.bbl)
+ (build/main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Thiele2010
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
 LaTeX Info: Redefining \microtypecontext on input line 7.
@@ -1069,12 +1077,18 @@ Chapter 1.
 [9
 
 ]
-<./Pictures/GEMs.png, id=159, 494.44725pt x 250.536pt>
+
+LaTeX Warning: Citation 'Thiele2010' on page 10 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'Thiele2010' on page 10 undefined on input line 59.
+
+<./Pictures/GEMs.png, id=166, 494.44725pt x 250.536pt>
 File: ./Pictures/GEMs.png Graphic file (type png)
 <use ./Pictures/GEMs.png>
-Package pdftex.def Info: ./Pictures/GEMs.png  used on input line 76.
+Package pdftex.def Info: ./Pictures/GEMs.png  used on input line 84.
 (pdftex.def)             Requested size: 441.01773pt x 223.46565pt.
- [10] [11 <./Pictures/GEMs.png>]) (./aims_of_the_thesis.tex [12]
+[10] [11 <./Pictures/GEMs.png>]) (./aims_of_the_thesis.tex [12]
 Chapter 2.
 ) (./materials_and_methods.tex [13
 
@@ -1119,18 +1133,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27798 strings out of 474272
- 525601 string characters out of 5751548
- 1933533 words of memory out of 5000000
- 49476 multiletter control sequences out of 15000+600000
- 576002 words of font info for 130 fonts, out of 8000000 for 9000
+ 27823 strings out of 474272
+ 526386 string characters out of 5751548
+ 1938533 words of memory out of 5000000
+ 49492 multiletter control sequences out of 15000+600000
+ 576144 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,6n,95p,1101b,1896s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/main.pdf (20 pages, 494717 bytes).
+Output written on build/main.pdf (20 pages, 503706 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
  29336 words of extra memory for PDF output out of 29859 (max. 10000000)
 
