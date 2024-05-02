@@ -18,7 +18,7 @@ model.reactions.get_by_id("EX_glc__D_e").upper_bound = 9999
 model.reactions.get_by_id("EX_glc__D_e").lower_bound = -9999
 
 # Changing the objective function to glucose min
-model.objective = "EX_glc__D_e" 
+model.objective = "BIOMASS_RT" 
 solution = model.optimize() 
 
 # Glucose uptakes, lab data

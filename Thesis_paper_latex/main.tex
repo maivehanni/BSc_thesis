@@ -2,8 +2,6 @@
 
 \usepackage{taltech_bsc}
 
-\addbibresource{bibliography.bib}
-
 \begin{document}
 \begin{titlepage}
     \includegraphics{taltech_logo.jpg}
@@ -94,6 +92,16 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
 
-\input{supplementary.tex}
+% \input{supplementary.tex}
+
+\appendix
+% \chapter{Appendix}
+\chapter{Genome-scale metabolic model reconstruction}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{GEM_construction.jpg}
+    \caption{The metabolic network reconstruction process. Figure is from \cite{Thiele2010}.}
+    \label{GEM reconstruction}
+\end{figure}
 
 \end{document}

@@ -33,7 +33,19 @@
 
 
 %					viitamine
-\usepackage[backend=biber, style=ieee]{biblatex} %, citestyle=numeric-comp
+
+\usepackage[backend=biber, style=numeric-comp,
+            isbn=false,
+            url=false,
+            doi=true,
+            date=year,
+            sorting=none,
+            giveninits=true,
+            uniquename=init]{biblatex}
+\DeclareNameAlias{author}{family-given}
+\addbibresource{bibliography.bib}
+
+%\usepackage[backend=biber, style=ieee]{biblatex} %, citestyle=numeric-comp
 \usepackage{csquotes}
 
 

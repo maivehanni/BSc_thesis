@@ -5,8 +5,8 @@ from os.path import join
 from cobra import Model, Reaction, Metabolite
 from cobra.sampling import sampling
 import numpy as np
-os.environ["R_HOME"] = f"{os.environ['CONDA_PREFIX']}\\Lib\\R"
-import rpy2.robjects
+# os.environ["R_HOME"] = f"{os.environ['CONDA_PREFIX']}\\Lib\\R"
+# import rpy2.robjects
 from plotnine import *
 import matplotlib.pyplot as plt 
 import copy
@@ -15,8 +15,6 @@ model_data1=cobra.io.read_sbml_model("C:\\Users\\Maive\\Desktop\\BSc_loputoo\\Mo
 # # FLuxes when optimized for ATPM
 model_data1.objective = "ATPM" 
 solution1 = model_data1.optimize('minimize')
-
-model_data=cobra.io.read_sbml_model("C:\\Users\\Maive\\Desktop\\BSc_loputoo\\Model_files\\Rt_IFO0880.xml")
 
 # Lab data
 growth_rates = [0.03, 0.08, 0.12, 0.17, 0.20, 0.23] #[0.049, 0.100, 0.151, 0.203, 0.25, 0.301]
@@ -29,15 +27,16 @@ all_fluxes_dif_GR_ATPM_min = pd.DataFrame(columns=['Growth rate', *all_fluxes.in
 
 for i in range(len(growth_rates)):
 
-    model = copy.deepcopy(model_data)
+    model=cobra.io.read_sbml_model("C:\\Users\\Maive\\Desktop\\BSc_loputoo\\Model_files\\Rt_IFO0880.xml")
     model.objective = "ATPM"
     model.reactions.BIOMASS_RT.bounds = growth_rates[i], growth_rates[i]
 
-    medium = model.medium
-    medium["EX_glc__D_e"] = -(glucose_uptakes[i])
-    model.medium = medium
+    model.reactions.EX_glc__D_e.bounds = (glucose_uptakes[i]), (glucose_uptakes[i])
+    # medium = model.medium
+    # medium["EX_glc__D_e"] = -(glucose_uptakes[i])
+    # model.medium = medium
     solution = model.optimize('minimize')
     
     all_fluxes_dif_GR_ATPM_min.loc[i] = solution.fluxes[['BIOMASS_RT', *all_fluxes.index]].values
 
-print(all_fluxes_dif_GR_ATPM_min[['BIOMASS_RT', 'EX_glc__D_e', 'G6PDH2r', 'XPK', 'ATPM', 'ACITL']])
+print(all_fluxes_dif_GR_ATPM_min[['BIOMASS_RT', 'EX_glc__D_e', 'G6PDH2r', 'TKT1', 'TALA','TKT2', 'XPK', 'FBA', 'PYRDC','PDHm', 'FPK', 'ATPM', 'ACITL']])

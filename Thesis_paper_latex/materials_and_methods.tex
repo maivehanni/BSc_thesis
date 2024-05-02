@@ -1,10 +1,37 @@
-\chapter{Materials and methods}
+\chapter{Methods}
+
+The objective of the study was to select one of the four GEMs of \textit{R. toruloides} for investigating \textit{R. toruloides} lipogenesis metabolism
+based on a comparison between these models. FBA was carried out with all of the models using several objective functions and constraints. The intracellular fluxes of PPP and TCA enzymes were compared between the models. 
+
+Metabolic models JSON files were taken from supplemental
+files from publications. % Add the four publications, i.e Julianos?
+Escher (\cite{King2015}) was used to build metabolic
+pathway maps and visualize fluxes. Escher platform allows the creation of 
+metabolic maps based on the reactions of a given GEM, which can be fed with the flux distributions to have a clearer view of which metabolic pathways are used in every condition.
+
+Flux balance analysis (FBA) was used throughout the process for
+model prediction \cite{Orth2010}. At first growth phenotypes
+were obtained using FBA with the objective of maximizing the biomass
+reaction ($h^{-1}$) whose flux is equivalent to the growth rate. The calculations were performed using the COBRApy
+package (version 0.29.0) \cite{Ebrahim2013} with the Gurobi solver. % ! Add solvers citation (GurobiOptimization Inc., Houston, TX, USA).. 
+
+The used functions of COBRApy package were: ... . 
 
 \section{Criteria for selecting experimental data}
 
 \section{Biomass integration to the model}
 
 \section{Flux balance analysis and sampling of the solution space}
+
+
+
+
+% Biomass reaction flux in $h^{-1}$ 
+% Other fluxes in mmol $gDW^{-1} hr^{-1}1$
+% COBRApy \cite{Ebrahim2013}
+% FBA \cite{Orth2010}
+
+
 
 % Constraining for the limiting nutrient
 % (Bioinformatics: https://divenn.tch.harvard.edu/)
