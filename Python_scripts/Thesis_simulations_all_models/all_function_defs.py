@@ -12,31 +12,31 @@ from plotnine import *
 import matplotlib.pyplot as plt
 from cobra.flux_analysis.loopless import loopless_solution
 
-def all_fluxes_biomass_max_df(model_path, glucose_uptakes, biomass_rxn_ID, glc_ID):
+def all_fluxes_biomass_max_df(model_path: str, glucose_uptakes: list, biomass_rxn_ID: str, glc_ID: str):
     # Creating an empty dataframe, which has enzymes as columns and as many rows as glucose uptakes
     model1=cobra.io.read_sbml_model(model_path)
     solution1 = model1.optimize()
-    enzymes = solution1.fluxes.to_frame(name='Flux')
-    all_fluxes_biomass_max = pd.DataFrame(columns=[*enzymes.index], index=range(len(glucose_uptakes))) #flux_values.index gives the row names column, * extracts the list of strings
+    metabolites = solution1.fluxes.to_frame(name='Flux')
+    all_fluxes_biomass_max = pd.DataFrame(columns=[*metabolites.index], index=range(len(glucose_uptakes))) #flux_values.index gives the row names column, * extracts the list of strings
  
-    # Calculating flux data with all glucose uptakes
+    # Calculating flux data on different glucose uptakes
     for i in range(len(glucose_uptakes)):
        
-        model=cobra.io.read_sbml_model(model_path)
+        model=cobra.io.read_sbml_model(model_path) # It's important to load the original model again each time before optimizing again (otherwise the solution differs as the initial conditions would differ)
         model.objective = biomass_rxn_ID 
         
-        model.reactions.get_by_id(glc_ID).bounds = -(glucose_uptakes[i]), -(glucose_uptakes[i])  
+        model.reactions.get_by_id(glc_ID).bounds = -(glucose_uptakes[i]), -(glucose_uptakes[i])  # NB! It's also possible to change glucose uptake from model.medium dictionary, but that gives differences in solution fluxes
          
         model.optimize()
         solution = loopless_solution(model)
         
-        all_fluxes_biomass_max.loc[i] = solution.fluxes[[*enzymes.index]].values
+        all_fluxes_biomass_max.loc[i] = solution.fluxes[[*metabolites.index]].values
 
     return all_fluxes_biomass_max 
 
 
 
-def all_fluxes_NGAM_min_df(model_path, glucose_uptakes, growth_rates, obj_func_ID, glc_ID, biomass_rxn_ID):
+def all_fluxes_NGAM_min_df(model_path: str, glucose_uptakes: list, growth_rates: list, NGAM_rxn_ID: str, glc_ID: str, biomass_rxn_ID: str):
     # Creating an empty dataframe, which has enzymes as columns and as many rows as glucose uptakes
     model1=cobra.io.read_sbml_model(model_path)
     solution1 = model1.optimize()
@@ -47,7 +47,7 @@ def all_fluxes_NGAM_min_df(model_path, glucose_uptakes, growth_rates, obj_func_I
     for i in range(len(glucose_uptakes)):
        
         model=cobra.io.read_sbml_model(model_path)
-        model.objective = obj_func_ID 
+        model.objective = NGAM_rxn_ID 
         model.reactions.get_by_id(glc_ID).bounds = -(glucose_uptakes[i]), -(glucose_uptakes[i])  
         model.reactions.get_by_id(biomass_rxn_ID).bounds = growth_rates[i], growth_rates[i]
 
@@ -61,17 +61,19 @@ def all_fluxes_NGAM_min_df(model_path, glucose_uptakes, growth_rates, obj_func_I
 
 
 
-def metabolites_fluxes(model_path, all_fluxes_df, metabolites):
+def metabolites_fluxes(model_path: str, all_fluxes_df, metabolites: list):
     
     model = cobra.io.read_sbml_model(model_path)
     metabolites_fluxes = all_fluxes_df[metabolites]
     
-    # Sum two phosphoketolases together for easier comparison with models that have only one phosphoketolase
+    # Sum two phosphoketolases in Rt_IFO0880 models together for easier comparison with models that have only one phosphoketolase
     if 'XPK' in metabolites:
         metabolites_fluxes.loc[:, 'XPK'] = metabolites_fluxes.loc[:, 'XPK'] + all_fluxes_df.loc[:, 'FPK']
 
+    # Change metabolites IDs to their name for easier understanding
+    
+    # Because in Rt_IFO0880 models TKT1 and TKT2 have the same name (Transketolase), this models namehave to be changed differently
     if 'TKT1' in metabolites:
-        # Change metabolites IDs with their name for easier understanding
         for i in range(len(metabolites)):
             if metabolites_fluxes.columns[i] != 'TKT1' and metabolites_fluxes.columns[i] != 'TKT2':
                 metabolites_fluxes = metabolites_fluxes.rename(columns = {metabolites_fluxes.columns[i]: getattr(model.reactions, metabolites_fluxes.columns[i]).name})
@@ -80,44 +82,62 @@ def metabolites_fluxes(model_path, all_fluxes_df, metabolites):
             metabolites_fluxes = metabolites_fluxes.rename(columns = {metabolites_fluxes.columns[i]: getattr(model.reactions, metabolites_fluxes.columns[i]).name})
 
     # Change some names 
-    metabolites_fluxes = metabolites_fluxes.rename(columns = {'Glucose 6-phosphate dehydrogenase': 'oxPPP', 'ATP maintenance requirement': 'NGAM', 'Xylulose-5-phosphate phosphoketolase': 'Phosphoketolase', 
-                                                              'TKT1': 'Transketolase 1', 'TKT2': 'Transketolase 2'})
+    metabolites_fluxes = metabolites_fluxes.rename(columns = {'Glucose 6-phosphate dehydrogenase': 'oxPPP', 'glucose 6-phosphate dehydrogenase': 'oxPPP', 'non-growth associated maintenance reaction': 'NGAM',
+                                                              'ATP maintenance requirement': 'NGAM', 'Xylulose-5-phosphate phosphoketolase': 'Phosphoketolase', 
+                                                              'TKT1': 'Transketolase 1', 'TKT2': 'Transketolase 2', 'phosphoketolase (fructose 6-phosphate)': 'phosphoketolase'})
 
     return metabolites_fluxes
 
 
 
-def plot_ex_intr_fluxes(all_fluxes_df, exchange_fluxes, intracellular_fluxes, ACL_phosphoketolase, title, biomass_rxn_ID):
-    # Plot exchange and intracellular fluxes
+def plot_ex_intr_fluxes(all_fluxes_df, exchange_fluxes, intracellular_fluxes, ACL_phosphoketolase, title: str, biomass_rxn_ID: str): 
+    # Plot exchange and intracellular fluxes, add lab data to exchange fluxes plot
+    
+    # Lab data
+    GR = [0.049, 0.100, 0.151, 0.203, 0.301]
+    glc = [0.476, 1.114, 1.648, 2.305, 3.1]
+    co2 = [1.171, 2.521, 3.854, 5.834, 7.415]
+    o2 = [1.083, 2.521, 3.851, 4.352, 6.327]
+
+    data = {'GR': GR, 'glc': glc, 'o2': o2, 'co2': co2}
+    lab_data = pd.DataFrame(data)
+    
+    
     fig, ax = plt.subplots(1, 2, figsize=(12,6)) #, 
     fig.suptitle(title)
 
-    # Sample data
-
-    x1 = all_fluxes_df[biomass_rxn_ID]
-    y1 = np.abs(exchange_fluxes)
-
-    ax[0].plot(x1, y1, '-', label= y1.columns) #
+    # Exp data
+    x1 = lab_data['GR']
+    y1 = lab_data[['glc', 'o2', 'co2']]
+    # Simulations data
+    x = all_fluxes_df[biomass_rxn_ID]
+    y = np.abs(exchange_fluxes)
+    
+    ax[0].plot(x1, y1, '--', label= ['Exp glucose exchange', 'Exp oxygen exchange', 'Exp carbon dioxide exchange']) #
+    ax[0].plot(x, y, '-', label= y.columns) #
+    
+    ax[0].set_xlim([0.024, 0.24])  
     ax[0].legend(fontsize=10, loc='upper left')
-    ax[0].set_title("Exchange fluxes") #fluxes biomass maximization
+    ax[0].set_title("Exchange fluxes") # fluxes biomass maximization
     ax[0].set_xlabel('Biomass growth rate $(1/h)$')
     ax[0].set_ylabel('Flux $(mmol/gDW/h)$')
 
-    x2 = all_fluxes_df[biomass_rxn_ID]
-    y2 = np.abs(intracellular_fluxes)
-    y3 = np.abs(ACL_phosphoketolase)
+    y3 = np.abs(intracellular_fluxes)
+    y4 = np.abs(ACL_phosphoketolase)
 
-    ax[1].plot(x2, y2, '-', label= y2.columns) #
-    ax[1].plot(x2, y3, '--', label= y3.columns) # ACL and phosphoketolase
+    ax[1].plot(x, y3, '-', label= y3.columns) #
+    ax[1].plot(x, y4, '--', label= y4.columns) # ACL and phosphoketolase
 
     ax[1].legend(fontsize=10, loc='upper left')
     ax[1].set_title("Intracellular fluxes")
     ax[1].set_xlabel('Biomass growth rate $(1/h)$')
     ax[1].set_ylabel('Flux $(mmol/gDW/h)$')
     
+    return fig
     
     
-def cofactor_balances_biomass_max(model_path, cofactor_list, glucose_uptakes, i, biomass_rxn_ID, glc_ID):
+    
+def cofactor_balances_biomass_max(model_path: str, cofactor_list: list, glucose_uptakes: list, i: int, biomass_rxn_ID: str, glc_ID: str):
     producing_fluxes = pd.DataFrame() 
     consuming_fluxes = pd.DataFrame()
     
@@ -153,7 +173,7 @@ def cofactor_balances_biomass_max(model_path, cofactor_list, glucose_uptakes, i,
 
 
 
-def cofactor_balances_NGAM_min(model_path, cofactor_list, glucose_uptakes, growth_rates, NGAM_rxn_ID, glc_ID, biomass_rxn_ID, i):
+def cofactor_balances_NGAM_min(model_path: str, cofactor_list: list, glucose_uptakes: list, growth_rates: list, NGAM_rxn_ID: str, glc_ID: str, biomass_rxn_ID: str, i: int):
     producing_fluxes = pd.DataFrame() 
     consuming_fluxes = pd.DataFrame()
     
@@ -193,7 +213,7 @@ def cofactor_balances_NGAM_min(model_path, cofactor_list, glucose_uptakes, growt
 
 
 
-def cofactor_fluxes_pie_chart(model_path, cofactor_fluxes, **fig_kw):
+def cofactor_fluxes_pie_chart(model_path: str, cofactor_fluxes, **fig_kw):
     threshold = 0.05# threshold shows the percent of the flux for including in others sector on pie chart 
     # The three lines below are for grouping together reactions with low fluxes in producing
     producing_cofactor_fluxes_draw = cofactor_fluxes[(cofactor_fluxes['flux'] > 0).copy()]    
@@ -229,7 +249,7 @@ def cofactor_fluxes_pie_chart(model_path, cofactor_fluxes, **fig_kw):
     fig = plt.figure()
          
     pie_chart = plt.pie(producing_and_consuming_fluxes.loc[:, 'percent'], labels = reaction_names_w_flux)  #autopct='%1.1f%%' pd.concat([producing_cofactor_fluxes_draw, consuming_cofactor_fluxes_draw])[['flux', 'percent']]
-    plt.tight_layout()
+    # plt.tight_layout()
 
     # plt.legend(producing_and_consuming_fluxes, reaction_names_w_flux, title = 'Reaction names', loc="center left",  bbox_to_anchor=(1, 0, 0.5, 1))
     
@@ -239,11 +259,11 @@ def cofactor_fluxes_pie_chart(model_path, cofactor_fluxes, **fig_kw):
 
 
 # Get all fluxes to excel
-def all_fluxes_to_excel(path, all_fluxes_df):
+def all_fluxes_to_excel(path: str, all_fluxes_df):
     with pd.ExcelWriter(path) as excel_writer:
         all_fluxes_df.to_excel(excel_writer, sheet_name='Sheet 1', index=True)
         
 # Get csv file of fluxes (from 0-4)
 
-def fluxes_to_csv(path, all_fluxes_df, i):
+def fluxes_to_csv(path: str, all_fluxes_df, i: int):
     all_fluxes_df.loc[i].to_csv(path, index=True)
