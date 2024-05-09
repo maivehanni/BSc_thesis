@@ -1,37 +1,88 @@
 \chapter{Methods}
 
-The objective of the study was to select one of the four GEMs of \textit{R. toruloides} for investigating \textit{R. toruloides} lipogenesis metabolism
-based on a comparison between these models. FBA was carried out with all of the models using several objective functions and constraints. The intracellular fluxes of PPP and TCA enzymes were compared between the models. 
-
-Metabolic models JSON files were taken from supplemental
-files from publications. % Add the four publications, i.e Julianos?
-Escher (\cite{King2015}) was used to build metabolic
-pathway maps and visualize fluxes. Escher platform allows the creation of 
-metabolic maps based on the reactions of a given GEM, which can be fed with the flux distributions to have a clearer view of which metabolic pathways are used in every condition.
-
-Flux balance analysis (FBA) was used throughout the process for
-model prediction \cite{Orth2010}. At first growth phenotypes
-were obtained using FBA with the objective of maximizing the biomass
-reaction ($h^{-1}$) whose flux is equivalent to the growth rate. The calculations were performed using the COBRApy
-package (version 0.29.0) \cite{Ebrahim2013} with the Gurobi solver. % ! Add solvers citation (GurobiOptimization Inc., Houston, TX, USA).. 
-
-The used functions of COBRApy package were: ... . 
-
-\section{Criteria for selecting experimental data}
-
-\section{Biomass integration to the model}
-
-\section{Flux balance analysis and sampling of the solution space}
-
-
-
-
 % Biomass reaction flux in $h^{-1}$ 
 % Other fluxes in mmol $gDW^{-1} hr^{-1}1$
 % COBRApy \cite{Ebrahim2013}
 % FBA \cite{Orth2010}
 
+% Perform flux balance analysis of R. toruloides at
+% at least 5 different dilution rates (D 0.05 .. 0.2 h-1)
+% under carbon limitation.
+% Describe central carbon metabolic fluxes by different models through:
+% - PP and XPK pathway
+% - ACL and the TCA cycle
+% Extract and analyze cofactor balances
+
+Genome-scale metabolic models of \textit{R. toruloides} (JSON files) were obtained from supplemental
+files from publications \cite{Tiukova2019, Dinh2019, Kim2021} and the fourth model \cite{DeBiaggi2023}, 
+made by a group member, was obtained directly from him. 
+
+With all these models, simulations were performed using the COBRApy
+package (version 0.29.0) \cite{Ebrahim2013} in Python (version 3.11.4). 
+Throughout the process, metabolic flux patterns were predicted using flux balance analysis \cite{Orth2010} from COBRApy package
+with the Gurobi mathematical optimization solver (version 11.0.0, Gurobi Optimization Inc.).
+
+All scripts are available in Github repository upon request sent to maive.hanni@gmail.com.
 
 
-% Constraining for the limiting nutrient
-% (Bioinformatics: https://divenn.tch.harvard.edu/)
+\section{Selecting experimental data}
+
+In the simulations the experimental steady-state cultivation data of \textit{R. toruloides} strain IFO0880 in 1 L bioreactor was used.
+The experiment was done by our group and the results have not yet been published. The cultivation process is described in \cite{Rekena2023}. 
+All rates are expressed in $mmol/gDW/h$, and the biomass specific growth rate 
+is expressed as ${1/h}$. The data is shown in the table \ref{table:LabData}.
+
+\begin{table}[h]
+    \centering
+    \caption{Continuous cultivation results from lab experiments}
+    \begin{tabular}{c|c|c|c|c}
+        
+            \textbf{Biomass growth rate} & \textbf{Glucose uptake} & \textbf{CO$_2$} & \textbf{O$_2$} & \textbf{Glycerol} \\ \hline
+            0.049 & 0.476 & 1.171 & 1.083 & almost nothing \\ 
+            0.100 & 1.114 & 2.521 & 2.521 & ~ \\ 
+            0.151 & 1.648 & 3.854 & 3.851 & ~ \\ 
+            0.203 & 2.305 & 5.834 & 4.352 & ~ \\ 
+            0.25 & - & - & - & ~  \\ 
+            0.301 & 3.1 & 7.415 & 6.327 & ~ \\ 
+        \end{tabular}
+    \label{table:LabData}
+\end{table}
+
+
+\section{Biomass integration to the model}
+
+% Please, describe really briefly that we used default biomass composition in these models that corresponds to X, Y , Z lipid content 
+% in biomass, measured in respective publications. To demonstrate that biomass composition was comparable in all models.
+
+
+
+\section{Flux balance analysis and sampling of the solution space} 
+
+% If there is time, would be nice to perform random sampling (like OptGPSampler in cobra) for the key FBA simulations in the thesis.
+
+Growth phenotypes were obtained using FBA with several objective functions. First, before having lab data for glucose uptake, 
+the objective function was set to glucose uptake maximisation and the biomass pseudoreaction, whose flux is equivalent to the growth 
+rate ($h^{1/h}$), was constrained at five different rates (0.05, 0.10, 0.15, 0.2, 0.25, 0.30) (as glucose uptake flux is notated in the model 
+with negative sign, setting the objective to glucose uptake maximisation corresponds to finding the solution space with minimal 
+absolute value of glucose uptake flux). % Try changing the phrasing...
+Model solutions were calculated on five different growth rates and Python's Pandas package was used for constructing 
+dataframes of extracellular and the fluxes of central carbon metabolism enzymes. Matplotlib was used for data visualization.
+
+Once lab data for steady-state cultivation of \textit{R. toruloides} strain IFO0880 was available, glucose uptake values 
+on five growth rates were used in simulations for model constraining. On carbon limitation the objective
+function was set to biomass maximisation. Again dataframes of the fluxes of interest were made and visualized.
+
+Metabolic flux patterns were further investigated using the minimisation of non-growth associated maintenance (NGAM) as objective 
+function with constraining both glucose uptake and growth rate to see if that changes the flux patterns. 
+As the model overestimates glucose uptake need for a specific growth rate, 
+it was not possible to constrain both glucose uptake and growth rate to the values obtained in lab - the solution was infeasible.
+Because of that, in this simulation glucose uptake was constrained to the values obtained in lab, but growth rate was constrained to 
+the growth rate values obtained in previous simulation when solution was optimized for maximum growth rate on specified glucose uptake. 
+
+For comparison of cofactor balances between the models, pie plots were made to visualize the production and consumption of NADPH, NADH and ATP. % Maybe we won't include ATP bc it was the same  
+Cofactor balances were simulated with biomass maximisation and NGAM minimisation 
+as the objective function, as the lab data was available.
+
+Finally, for some models the central carbon metabolism fluxes were visualized with Escher \cite{King2015}. On Escher platform it is possible
+to create metabolic maps based on the reactions of a given GEM, which can then be fed with the simulated
+flux distributions to have a better overview of used metabolic pathways.

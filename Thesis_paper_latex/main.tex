@@ -1,6 +1,8 @@
 \documentclass[a4paper, 11pt]{report}
 
 \usepackage{taltech_bsc}
+\usepackage{subcaption}
+
 
 \begin{document}
 \begin{titlepage}
@@ -9,8 +11,8 @@
     \begin{center}
         \vspace{35mm}
         \begin{LARGE}
-            Flux balance analysis of continuous cultivation for investigating
-            the lipogenesis metabolism in \textit{Rhodotorula toruloides}
+            Comparison of genome-scale metabolic models for investigating 
+            lipogenesis metabolism in \textit{Rhodotorula toruloides}
         \end{LARGE} \\
              Bachelor thesis
 
@@ -18,9 +20,20 @@
         \hfill
         \parbox{50mm}{
             Student: Maive Hanni \\
-            Supervisor: Alina Rekena, Department of Chemistry and Biotechnology, Early Stage Researcher \\
+            Supervisor: Alina Rekena, \\
+            Early Stage Researcher, \\
+            Department of Chemistry and Biotechnology \\
             Study program: Applied Chemistry and Gene Technology
             }
+
+            
+    %     \parbox{50mm}{
+    %     Student: Maive Hanni \\
+    %     Supervisor: Alina Rekena \footnotemark{} \\
+    %     Study program: Applied Chemistry and Gene Technology
+    % }
+    % \footnotetext{Early Stage Researcher, Department of Chemistry and Biotechnology}
+
 
         \vfill
         Tallinn 2024
@@ -33,7 +46,7 @@
     \begin{center}
         \vspace{35mm}
         \begin{LARGE}
-            \textit{Rhodotorula toruloides} lipogeneesi uurimine, kasutades metaboolsete voogude analüüsi
+            Ülegenoomsete metaboolsete mudelite võrdlus \textit{Rhodotorula toruloides} lipogeneesi uurimiseks
         \end{LARGE} \\
             Bakaluareusetöö
 
@@ -41,7 +54,9 @@
         \hfill
         \parbox{50mm}{
             Üliõpilane: Maive Hanni \\
-            Juhendaja: Alina Rekena, Keemia ja biotehnoloogia instituut, Doktorant-nooremteadur \\
+            Juhendaja: Alina Rekena,
+            Doktorant-nooremteadur, \\ 
+            Keemia ja biotehnoloogia instituut \\ 
             Õppekava: Rakenduskeemia ja geenitehnoloogia
             }
 
@@ -52,6 +67,10 @@
 
 \input{declaration.tex}
 
+% {
+%     \setlength{\parskip}{6pt}
+%     \tableofcontents
+% }
 \tableofcontents
 
 \pagenumbering{arabic} % alusta nummerdust siit
@@ -92,16 +111,7 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
 
-% \input{supplementary.tex}
+\input{supplementary.tex}
 
-\appendix
-% \chapter{Appendix}
-\chapter{Genome-scale metabolic model reconstruction}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{GEM_construction.jpg}
-    \caption{The metabolic network reconstruction process. Figure is from \cite{Thiele2010}.}
-    \label{GEM reconstruction}
-\end{figure}
 
 \end{document}

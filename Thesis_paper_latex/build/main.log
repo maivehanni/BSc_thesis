@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.6)  1 MAY 2024 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.6)  7 MAY 2024 11:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -864,7 +864,33 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \xs_countb=\count449
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
-))
+)) (c:/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen182
+\captionmargin=\dimen183
+\caption@leftmargin=\dimen184
+\caption@rightmargin=\dimen185
+\caption@width=\dimen186
+\caption@indent=\dimen187
+\caption@parindent=\dimen188
+\caption@hangindent=\dimen189
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count450
+\c@continuedfloat=\count451
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count452
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count453
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -872,46 +898,46 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (build/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 5.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 7.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 7.
  (c:/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
  (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 5.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 7.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count450
-\scratchdimen=\dimen182
+\scratchcounter=\count454
+\scratchdimen=\dimen190
 \scratchbox=\box70
-\nofMPsegments=\count451
-\nofMParguments=\count452
+\nofMPsegments=\count455
+\nofMParguments=\count456
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count453
-\MPscratchDim=\dimen183
-\MPnumerator=\count454
-\makeMPintoPDFobject=\count455
+\MPscratchCnt=\count457
+\MPscratchDim=\dimen191
+\MPnumerator=\count458
+\makeMPintoPDFobject=\count459
 \everyMPtoPDFconversion=\toks42
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -932,21 +958,21 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (build/main.bbl)
-Package biblatex Info: Reference section=0 on input line 5.
-Package biblatex Info: Reference segment=0 on input line 5.
-LaTeX Info: Redefining \microtypecontext on input line 5.
-Package microtype Info: Applying patch `item' on input line 5.
-Package microtype Info: Applying patch `toc' on input line 5.
-Package microtype Info: Applying patch `eqnum' on input line 5.
-Package microtype Info: Applying patch `footnote' on input line 5.
-Package microtype Info: Applying patch `verbatim' on input line 5.
+Package biblatex Info: Reference section=0 on input line 7.
+Package biblatex Info: Reference segment=0 on input line 7.
+LaTeX Info: Redefining \microtypecontext on input line 7.
+Package microtype Info: Applying patch `item' on input line 7.
+Package microtype Info: Applying patch `toc' on input line 7.
+Package microtype Info: Applying patch `eqnum' on input line 7.
+Package microtype Info: Applying patch `footnote' on input line 7.
+Package microtype Info: Applying patch `verbatim' on input line 7.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 5.
+LaTeX Info: Redefining \showhyphens on input line 7.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -987,28 +1013,30 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 5.
+Package hyperref Info: Link coloring OFF on input line 7.
 (build/main.out) (build/main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<./Pictures/taltech_logo.jpg, id=112, 159.651pt x 122.859pt>
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<./Pictures/taltech_logo.jpg, id=96, 159.651pt x 122.859pt>
 File: ./Pictures/taltech_logo.jpg Graphic file (type jpg)
 <use ./Pictures/taltech_logo.jpg>
-Package pdftex.def Info: ./Pictures/taltech_logo.jpg  used on input line 7.
+Package pdftex.def Info: ./Pictures/taltech_logo.jpg  used on input line 9.
 (pdftex.def)             Requested size: 159.6506pt x 122.85867pt.
 
-Underfull \hbox (badness 7907) in paragraph at lines 23--23
+Underfull \hbox (badness 7907) in paragraph at lines 27--27
 \T1/cmr/m/n/10.95 (+20) Study pro-gram: Ap-plied
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1016,13 +1044,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Pictures/taltech_logo.jpg>]
-<./Pictures/logo.jpg, id=121, 201.042pt x 158.994pt>
+<./Pictures/logo.jpg, id=105, 201.042pt x 158.994pt>
 File: ./Pictures/logo.jpg Graphic file (type jpg)
 <use ./Pictures/logo.jpg>
-Package pdftex.def Info: ./Pictures/logo.jpg  used on input line 31.
+Package pdftex.def Info: ./Pictures/logo.jpg  used on input line 44.
 (pdftex.def)             Requested size: 201.0415pt x 158.9936pt.
 
-Underfull \hbox (badness 3291) in paragraph at lines 46--46
+Underfull \hbox (badness 3291) in paragraph at lines 61--61
 \T1/cmr/m/n/10.95 (+20) Juhendaja: Alina Rekena,
  []
 
@@ -1030,12 +1058,12 @@ Underfull \hbox (badness 3291) in paragraph at lines 46--46
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 \end{titlepage}
+l.66 \end{titlepage}
                      [1 <./Pictures/logo.jpg>] (./declaration.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \tableofcontents
+l.74 \tableofcontents
                       [1
 
 ] (build/main.toc [2
@@ -1056,40 +1084,208 @@ l.55 \tableofcontents
 Chapter 1.
 [9
 
-] [10] [11] [12]
-<./Pictures/GEMs.png, id=279, 494.44725pt x 250.536pt>
+] [10] [11] [12] [13]
+<./Pictures/GEMs.png, id=269, 494.44725pt x 250.536pt>
 File: ./Pictures/GEMs.png Graphic file (type png)
 <use ./Pictures/GEMs.png>
-Package pdftex.def Info: ./Pictures/GEMs.png  used on input line 195.
+Package pdftex.def Info: ./Pictures/GEMs.png  used on input line 248.
 (pdftex.def)             Requested size: 441.01773pt x 223.46565pt.
- [13 <./Pictures/GEMs.png>]
-<./Pictures/FBA_solution_space.jpg, id=296, 505.89pt x 172.0026pt>
+ [14 <./Pictures/GEMs.png>]
+<./Pictures/FBA_solution_space.jpg, id=286, 505.89pt x 172.0026pt>
 File: ./Pictures/FBA_solution_space.jpg Graphic file (type jpg)
 <use ./Pictures/FBA_solution_space.jpg>
-Package pdftex.def Info: ./Pictures/FBA_solution_space.jpg  used on input line 251.
+Package pdftex.def Info: ./Pictures/FBA_solution_space.jpg  used on input line 304.
 (pdftex.def)             Requested size: 441.01773pt x 149.9481pt.
- [14 <./Pictures/FBA_solution_space.jpg>] [15] [16] [17] [18] [19]) (./aims_of_the_thesis.tex [20]
+ [15 <./Pictures/FBA_solution_space.jpg>] [16] [17] [18] [19] [20]) (./aims_of_the_thesis.tex [21]
 Chapter 2.
-) (./materials_and_methods.tex [21
+) (./materials_and_methods.tex [22
 
 ]
 Chapter 3.
-) (./results.tex [22
+[23
 
-]
+]) (./results.tex [24]
 Chapter 4.
-) (./conclusions.tex [23
+[25
 
 ]
+<./Pictures/experimental_ex_fluxes.png, id=415, 403.2666pt x 330.2739pt>
+File: ./Pictures/experimental_ex_fluxes.png Graphic file (type png)
+<use ./Pictures/experimental_ex_fluxes.png>
+Package pdftex.def Info: ./Pictures/experimental_ex_fluxes.png  used on input line 83.
+(pdftex.def)             Requested size: 220.50887pt x 180.59792pt.
+ [26 <./Pictures/experimental_ex_fluxes.png>]
+<./Pictures/rhtoGEM_biomass_max.png, id=427, 716.9184pt x 425.6703pt>
+File: ./Pictures/rhtoGEM_biomass_max.png Graphic file (type png)
+<use ./Pictures/rhtoGEM_biomass_max.png>
+Package pdftex.def Info: ./Pictures/rhtoGEM_biomass_max.png  used on input line 119.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+<./Pictures/rhtoGEM_bm_NADPH.png, id=428, 462.528pt x 346.896pt>
+File: ./Pictures/rhtoGEM_bm_NADPH.png Graphic file (type png)
+<use ./Pictures/rhtoGEM_bm_NADPH.png>
+Package pdftex.def Info: ./Pictures/rhtoGEM_bm_NADPH.png  used on input line 129.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/rhtoGEM_bm_NADPH_max.png, id=429, 462.528pt x 346.896pt>
+File: ./Pictures/rhtoGEM_bm_NADPH_max.png Graphic file (type png)
+<use ./Pictures/rhtoGEM_bm_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/rhtoGEM_bm_NADPH_max.png  used on input line 135.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+ [27 <./Pictures/rhtoGEM_biomass_max.png> <./Pictures/rhtoGEM_bm_NADPH.png> <./Pictures/rhtoGEM_bm_NADPH_max.png>]
+<./Pictures/iRhtoC_biomass_max.png, id=442, 716.9184pt x 425.6703pt>
+File: ./Pictures/iRhtoC_biomass_max.png Graphic file (type png)
+<use ./Pictures/iRhtoC_biomass_max.png>
+Package pdftex.def Info: ./Pictures/iRhtoC_biomass_max.png  used on input line 158.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+<./Pictures/iRhtoC_bm_NADPH_min.png, id=443, 462.528pt x 346.896pt>
+File: ./Pictures/iRhtoC_bm_NADPH_min.png Graphic file (type png)
+<use ./Pictures/iRhtoC_bm_NADPH_min.png>
+Package pdftex.def Info: ./Pictures/iRhtoC_bm_NADPH_min.png  used on input line 168.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/iRhtoC_bm_NADPH_max.png, id=444, 462.528pt x 346.896pt>
+File: ./Pictures/iRhtoC_bm_NADPH_max.png Graphic file (type png)
+<use ./Pictures/iRhtoC_bm_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/iRhtoC_bm_NADPH_max.png  used on input line 174.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/IFO0880_biomass_max.png, id=447, 716.9184pt x 425.6703pt>
+File: ./Pictures/IFO0880_biomass_max.png Graphic file (type png)
+<use ./Pictures/IFO0880_biomass_max.png>
+Package pdftex.def Info: ./Pictures/IFO0880_biomass_max.png  used on input line 196.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+ [28 <./Pictures/iRhtoC_biomass_max.png> <./Pictures/iRhtoC_bm_NADPH_min.png> <./Pictures/iRhtoC_bm_NADPH_max.png>]
+<./Pictures/IFO0880_biomass_max_NADPH.png, id=457, 462.528pt x 346.896pt>
+File: ./Pictures/IFO0880_biomass_max_NADPH.png Graphic file (type png)
+<use ./Pictures/IFO0880_biomass_max_NADPH.png>
+Package pdftex.def Info: ./Pictures/IFO0880_biomass_max_NADPH.png  used on input line 206.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/IFO0880_biomass_max_NADPH_max.png, id=458, 462.528pt x 346.896pt>
+File: ./Pictures/IFO0880_biomass_max_NADPH_max.png Graphic file (type png)
+<use ./Pictures/IFO0880_biomass_max_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/IFO0880_biomass_max_NADPH_max.png  used on input line 212.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/Rt_IFO0880_LEBp2023_biomass_max.png, id=461, 716.9184pt x 425.6703pt>
+File: ./Pictures/Rt_IFO0880_LEBp2023_biomass_max.png Graphic file (type png)
+<use ./Pictures/Rt_IFO0880_LEBp2023_biomass_max.png>
+Package pdftex.def Info: ./Pictures/Rt_IFO0880_LEBp2023_biomass_max.png  used on input line 234.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+
+Underfull \hbox (badness 7851) in paragraph at lines 236--236
+[]\T1/cmr/m/n/10.95 (+20) Figure 4.8: |Ex-change and in-tra-cel-lu-lar fluxes in \T1/cmr/m/it/10.95 (+20) R. toru-loides \T1/cmr/m/n/10.95 (+20) with model
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH.png, id=462, 462.528pt x 346.896pt>
+File: ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH.png Graphic file (type png)
+<use ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH.png>
+Package pdftex.def Info: ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH.png  used on input line 244.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH_max.png, id=463, 462.528pt x 346.896pt>
+File: ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH_max.png Graphic file (type png)
+<use ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH_max.png  used on input line 250.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29 <./Pictures/IFO0880_biomass_max.png> <./Pictures/IFO0880_biomass_max_NADPH.png> <./Pictures/IFO0880_biomass_max_NADPH_max.png>] [30 <./Pictures/Rt_IFO0880_LEBp2023_biomass_max.png> <./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH.png> <./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH_max.png>]
+<./Pictures/rhtoGEM_NGAM_min.png, id=483, 716.9184pt x 425.6703pt>
+File: ./Pictures/rhtoGEM_NGAM_min.png Graphic file (type png)
+<use ./Pictures/rhtoGEM_NGAM_min.png>
+Package pdftex.def Info: ./Pictures/rhtoGEM_NGAM_min.png  used on input line 278.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+<./Pictures/rhtoGEM_nm_NADPH.png, id=484, 462.528pt x 346.896pt>
+File: ./Pictures/rhtoGEM_nm_NADPH.png Graphic file (type png)
+<use ./Pictures/rhtoGEM_nm_NADPH.png>
+Package pdftex.def Info: ./Pictures/rhtoGEM_nm_NADPH.png  used on input line 288.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/rhtoGEM_nm_NADPH_max.png, id=485, 462.528pt x 346.896pt>
+File: ./Pictures/rhtoGEM_nm_NADPH_max.png Graphic file (type png)
+<use ./Pictures/rhtoGEM_nm_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/rhtoGEM_nm_NADPH_max.png  used on input line 294.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/iRhtoC_NGAM_min.png, id=488, 716.9184pt x 425.6703pt>
+File: ./Pictures/iRhtoC_NGAM_min.png Graphic file (type png)
+<use ./Pictures/iRhtoC_NGAM_min.png>
+Package pdftex.def Info: ./Pictures/iRhtoC_NGAM_min.png  used on input line 311.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Pictures/iRhtoC_nm_NADPH_min.png, id=489, 462.528pt x 346.896pt>
+File: ./Pictures/iRhtoC_nm_NADPH_min.png Graphic file (type png)
+<use ./Pictures/iRhtoC_nm_NADPH_min.png>
+Package pdftex.def Info: ./Pictures/iRhtoC_nm_NADPH_min.png  used on input line 323.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/iRhtoC_nm_NADPH_max.png, id=490, 462.528pt x 346.896pt>
+File: ./Pictures/iRhtoC_nm_NADPH_max.png Graphic file (type png)
+<use ./Pictures/iRhtoC_nm_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/iRhtoC_nm_NADPH_max.png  used on input line 329.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31 <./Pictures/rhtoGEM_NGAM_min.png> <./Pictures/rhtoGEM_nm_NADPH.png> <./Pictures/rhtoGEM_nm_NADPH_max.png>]
+<./Pictures/IFO0880_NGAM_min.png, id=504, 716.9184pt x 425.6703pt>
+File: ./Pictures/IFO0880_NGAM_min.png Graphic file (type png)
+<use ./Pictures/IFO0880_NGAM_min.png>
+Package pdftex.def Info: ./Pictures/IFO0880_NGAM_min.png  used on input line 348.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Pictures/IFO0880_nm_NADPH.png, id=505, 462.528pt x 346.896pt>
+File: ./Pictures/IFO0880_nm_NADPH.png Graphic file (type png)
+<use ./Pictures/IFO0880_nm_NADPH.png>
+Package pdftex.def Info: ./Pictures/IFO0880_nm_NADPH.png  used on input line 358.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+<./Pictures/IFO0880_nm_NADPH_max.png, id=506, 462.528pt x 346.896pt>
+File: ./Pictures/IFO0880_nm_NADPH_max.png Graphic file (type png)
+<use ./Pictures/IFO0880_nm_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/IFO0880_nm_NADPH_max.png  used on input line 364.
+(pdftex.def)             Requested size: 216.1011pt x 162.07777pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Pictures/Rt_IFO0880_LEBp2023_NGAM_min.png, id=509, 716.9184pt x 425.6703pt>
+File: ./Pictures/Rt_IFO0880_LEBp2023_NGAM_min.png Graphic file (type png)
+<use ./Pictures/Rt_IFO0880_LEBp2023_NGAM_min.png>
+Package pdftex.def Info: ./Pictures/Rt_IFO0880_LEBp2023_NGAM_min.png  used on input line 382.
+(pdftex.def)             Requested size: 396.91325pt x 235.66524pt.
+
+Underfull \hbox (badness 6396) in paragraph at lines 384--384
+[]\T1/cmr/m/n/10.95 (+20) Figure 4.16: |Ex-change and in-tra-cel-lu-lar fluxes in \T1/cmr/m/it/10.95 (+20) R. toru-loides \T1/cmr/m/n/10.95 (+20) with model
+ []
+
+[32 <./Pictures/iRhtoC_NGAM_min.png> <./Pictures/iRhtoC_nm_NADPH_min.png> <./Pictures/iRhtoC_nm_NADPH_max.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH.png, id=521, 939.51pt x 361.35pt>
+File: ./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH.png Graphic file (type png)
+<use ./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH.png>
+Package pdftex.def Info: ./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH.png  used on input line 392.
+(pdftex.def)             Requested size: 216.1011pt x 83.11426pt.
+<./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH_max.png, id=522, 939.51pt x 361.35pt>
+File: ./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH_max.png Graphic file (type png)
+<use ./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH_max.png>
+Package pdftex.def Info: ./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH_max.png  used on input line 398.
+(pdftex.def)             Requested size: 216.1011pt x 83.11426pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./conclusions.tex [33 <./Pictures/IFO0880_NGAM_min.png> <./Pictures/IFO0880_nm_NADPH.png> <./Pictures/IFO0880_nm_NADPH_max.png>] [34 <./Pictures/Rt_IFO0880_LEBp2023_NGAM_min.png> <./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH.png> <./Pictures/Rt_IFO0880_LEBp2023_nm_NADPH_max.png>]
 Chapter 5.
-) (./summary.tex [24
+) (./summary.tex [35
 
-]) (./acknowledgements.tex [25
+]) (./acknowledgements.tex [36
 
-]) [26
+]) [37
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 91.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 110.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1097,16 +1293,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [27
+ [38
 
-] [28] [29] [30]
+] [39] [40] (./supplementary.tex [41]
 Appendix A.
-<./Pictures/GEM_construction.jpg, id=497, 505.89pt x 369.0588pt>
+<./Pictures/GEM_construction.jpg, id=625, 505.89pt x 369.0588pt>
 File: ./Pictures/GEM_construction.jpg Graphic file (type jpg)
 <use ./Pictures/GEM_construction.jpg>
-Package pdftex.def Info: ./Pictures/GEM_construction.jpg  used on input line 102.
+Package pdftex.def Info: ./Pictures/GEM_construction.jpg  used on input line 14.
 (pdftex.def)             Requested size: 441.01773pt x 321.73743pt.
-[31
+) [42
 
  <./Pictures/GEM_construction.jpg>] (build/main.aux)
  ***********
@@ -1114,24 +1310,24 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-01>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 79028FF49181186E3260F7D70D18487E;4890.
+(rerunfilecheck)             Checksum: 8831E4ECEED52D743C6233F201D812E7;4608.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28051 strings out of 474272
- 531756 string characters out of 5751548
+ 29735 strings out of 474272
+ 569709 string characters out of 5751548
  1940533 words of memory out of 5000000
- 49582 multiletter control sequences out of 15000+600000
- 582130 words of font info for 180 fonts, out of 8000000 for 9000
+ 51219 multiletter control sequences out of 15000+600000
+ 582614 words of font info for 184 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,6n,95p,1055b,2742s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/main.pdf (32 pages, 1067107 bytes).
+ 88i,9n,95p,1055b,2742s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on build/main.pdf (43 pages, 2318446 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 524 compressed objects within 6 object streams
- 110 named destinations out of 1000 (max. 500000)
- 33522 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 33615 words of extra memory for PDF output out of 35830 (max. 10000000)
 

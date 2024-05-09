@@ -1,12 +1,411 @@
 \chapter{Results}
 
 % Characterizing flux differences 
-% (Key figures: e.g. scatter plots, simulated flux maps, simulated enzyme usage distribution, if using total proteome ec-model)
+% (Key figures: e.g. scatter plots, simulated flux maps, cofactor pie plots)
 
+
+% Results Section 1. a figure panel with 
+% - A: brief metabolic map; 
+% - B: exchange fluxes;
+% - C: main intracellular fluxes. Different GRs on x axis
+
+
+\textit{Rhodotorula toruloides} can naturally accumulate high amounts of lipids, but the 
+metabolic mechanism that make this possible and differentiate \textit{R. toruloides} from non-oleaginous yeast are not fully understood.
+Biosynthesis of the main lipid precursors acetyl-CoA and NADPH takes place in the central carbon metabolism. A better understanding of which 
+metabolic pathways are used in production of these precursors and thus contribute to lipid accumulation, would aid in designing better 
+metabolic engineering strategies for increasing lipid production.
+
+Genome-scale metabolic models contain all known biochemical reactions of the specific organism and allow the calculation of
+metabolic fluxes, which represent the activity of metabolic pathways under specified conditions. 
+This makes GEMs important tool for studying metabolism, but it is important that the predictive power of the GEM is
+good. For \textit{R. toruloides} several genome-scale metabolic models are available, but so far comprehensive overview of 
+simulations focused on central carbon metabolism with these models has not been presented.
+This work will help in the future to design \textit{R. toruloides} as the leading microbial cell factory for production of microbial oils.
+
+
+\section{Metabolic map} % Add metabolic map of central carbon metabolism in Rt
+
+
+\section{Intracellular fluxes and supply of NADPH} %
 % Describe the fluxes in central carbon metabolism of R. toruloides;
-% Test forcing the flux through XPK and ACL and see what changes;
-% Extract cofactor balances and analyze what makes model to prefer one or the other.
+%% Explain the preference towards XPK or ACL pathway for producing acetyl-CoA
 
-% Results Section 1. A figure panel with A: brief metabolic map; B: exchange fluxes;
-% C: main intracellular fluxes. Different GRs on x acis will give you a line chart instead 
-% of a bar chart, which I think is more informative
+% Extract cofactor balances and analyze what makes model to prefer one or the other.
+% Explain where the NADPH is produced  
+
+% For plotting, the enzymes that had fluxes lower than 2% were added to the 'Others' section
+
+
+% Also cofactor balances of NADH and ATP were plotted.
+% * For the model rhto-GEM, there is no difference between any cofactor balances on different growth rates nor objective function
+% * iRhtoC - same as with rhto-GEM
+% * IFO0880 - differences between the objective functions on the lowest growth rate: biomass max predicts alcohol dehydrogenase as the main source of NADPH (a loop??), NGAM min predicts Homoserine dehydrogenase
+%  on the highest GR both obj functions predict alcohol dehydrogenase as the main source, consuming fluxes differ slightly on both GRs - but for us it's not important?
+% NADH and ATP fluxes don't differ
+% * IFO0880_jsb - NADPH: on lowest GR both obj functions predict fairly similarly that aldehyde dehydrogenase is the main source of NADPH
+% on highest GR biomass max as obj predicts alcohol dehydrogenase and NGAM min predicts homoserine dehydrogenase
+% NADH fluxes don't differ on different GR rates but they differ between biomass max and NGAM min as obj:
+%  biomass max - predicts several enzymes, NGAM min redicts glyceraldehyde-phosphate dehydrogenase as the main source of NADH
+% ATP don't differ between GR but between objective functions: biomass max predicts ATP synthase as the main source and NGAM min ADP/ATP transporter
+
+% Differences between models:
+% 
+
+% \textbf{Biomass maximisation as objective function}
+
+% % Solution fluxes of rhto-GEM showed that NADPH is recycled via ... . 
+% Production and consumption of NADPH with the different models is shown in figures below.
+
+
+Four genome-scale metabolic models of \textit{Rhodotorula toruloides} - rhto-GEM, iRhto1108, Rt\_IFO0880 and Rt\_IFO0880\_LEBp2023 - 
+were used for simulating this yeast's metabolic flux distribution using flux balance analysis. 
+Different objective functions, maximisation of biomass and minimisation
+of NGAM, were tested under carbon limitation. 
+To see the flux patterns over different biomass growth rates, the 
+solutions were constrained over five glucose uptakes - $0.476, 1.114, 1.648, 2.305, 3.1  (mmol/gDW/h)$ - that were measured in lab experiments.
+
+Fluxes through notable phosphoketolase and ATP-citrate lyase pathways, 
+that are known to be important for production of lipid precursors in olegeanous yeast, were in the center of interest and are distinguished in intracellular 
+flux figures from other enzymes using dashed line.
+What is more, lipid synthesis demands high amounts of NADPH, but only a few enzymes can generate it. 
+Pentose phosphate pathway and malic enzyme have been proposed as the main candidate enzymes for recycling NADPH in \textit{R. toruloides} 
+\cite{Ratledge2014}. Main intracellular fluxes of central carbon metabolism and production and consumption of NADPH were compared between the simulations 
+of four models. 
+
+For all simulations exchange fluxes were also observed
+for evaluating model prediction compared to experimental data. For easier comparison of model predicted exchange fluxes with experimentally measured 
+exchange fluxes,
+the experimental data is illustrated on a graph \ref{experimental_ex_fluxes}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{experimental_ex_fluxes.png}
+    \caption{Experimental exchange fluxes in \textit{R. toruloides} strain IFO0880 over five growth rates.}
+    \label{experimental_ex_fluxes}
+\end{figure}
+
+
+\subsection{Biomass maximisation as objective function}
+
+In first simulations biomass maximisation was used as objective function and the calculations were made under carbon limitation constraining glucose 
+uptake. Simulation results with all four models are shown in the figures below. All figures show the fluxes over growth rates from 0.05 - 0.25 ($1/h$).
+Exchange fluxes graphs show the exchange (uptake or secretion) rate of glucose, oxygen, ammonium, sulphate, phosphate and carbon dioxide.
+Intracellular fluxes graphs show the fluxes of NGAM, glucose uptake, glucose 6-phosphate dehydrogenase (oxPPP), transketolase 1, transaldolase, 
+transketolase 2, 
+fructose-biphosphate aldolase, pyruvate decarboxylase, pyruvate dehydrogenase, phosphoketolase and ATP-citrate lyase.
+
+These simulations, with biomass maximisation as objective function under carbon limitation, showed that the models prefer different pathways for 
+production of acetyl-CoA. The models rhto-GEM and Rt\_IFO0880 produced acetyl-CoA through phosphoketolase, whereas models iRhtoC and the modified model 
+of Rt\_IFO0880 (Rt\_IFO0880\_LEBp2023) produced acetyl-CoA using ACL. NADPH sources also differ. Each simulatio figures and results are described in more detail below.
+
+
+
+\textbf{rhto-GEM}
+
+The simulation results with rhto-GEM model for exchange and intracellular fluxes are shown in figure \ref{rhto-GEM biomass max} and fluxes of NADPH 
+producing and consuming enzymes are shown in \ref{fig:rhtoGEM_bm_NADPH}. Compared to the values obtained in lab experiments the model predicts higher exchange fluxes 
+on a given growth rate. This is also a reason why it was chosen to constrain the simulations with lab glucose uptake data and model simulated growth rates, because 
+otherwise the model predicted exchange fluxes would be even higher. This result was expected as GEMs are known to overestimate fluxes per growth rate.
+
+Model rhto-GEM predicts the use of phosphoketolase on all growth rates and no use of ATP-citrate lyase. For NADPH production and consumption there are no differences 
+between lowest and highest rate. In both cases the model predicts that over 90\% of the NADPH is produced by glucose 6-phosphate dehydrogenase (oxPPP) and
+phosphogluconate dehydrogenase. 6.3\% is produced by methylenetetrahydrofolate dehydrogenase.
+
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{rhtoGEM_biomass_max.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model rhto-GEM optimized for biomass maximization 
+    and constrained over five glucose uptake rates.}
+    \label{rhto-GEM biomass max}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rhtoGEM_bm_NADPH.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rhtoGEM_bm_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model rhto-GEM optimized for biomass maximization. 
+    Glucose uptake was constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:rhtoGEM_bm_NADPH}
+\end{figure}
+
+
+
+
+\textbf{iRhtoC}
+
+The results with iRhtoC are shown in figures \ref{iRhtoC_biomass_max} and \ref{fig:iRhtoC_bm_NADPH}. 
+This model predicts very similar exchange fluxes as the previous model. But predicted intracellular fluxes differ - iRhtoC predicts the use of 
+ATP-citrate lyase instead of phosphoketolase on all growth rates. 
+With this model there is also no difference in NADPH production and consumption on highest and lowest rates. 
+Almost 90\% of NADPH is produced by glucose 6-phosphate dehydrogenase (oxPPP) and
+phosphogluconate dehydrogenase and 6.4\% by malic enzyme. %Predicted consuming fluxes differ from rhto-GEM predictions by the use of malic enzyme.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{iRhtoC_biomass_max.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model iRhtoC optimized for biomass maximization 
+    and constrained over five glucose uptake rates.}
+    \label{iRhtoC_biomass_max}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{iRhtoC_bm_NADPH_min.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{iRhtoC_bm_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model iRhtoC. The model was optimized for biomass maximization. 
+    Glucose uptake was constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:iRhtoC_bm_NADPH}
+\end{figure}
+
+
+\textbf{Rt\_IFO0880}
+
+Model Rt\_IFO0880 fluxes are shown in \ref{fig:IFO0880_biomass_max} and \ref{fig:IFO0880_biomass_max_NADPH_max}.
+Exchange fluxes are similar with previous models. On all growth rates the use of phosphoketolase is predicted and no use of ACL. 
+(This model has two phosphoketolases, fructose-6-phosphate phosphoketolase (FPK) and xylulose-5-phosphate phosphoketolase (XPK), but as models rhto-GEM and iRhtoC
+have one phosphoketolase, FPK and XPK fluxes have been summed together for easier comparison with other models.)
+In NADPH production and consumption on highest and lowest rates there are not significant differences. 
+Around 90\% of NADPH is produced by alcohol dehydrogenase. %(That indicates unrealistic loops?)
+
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{IFO0880_biomass_max.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model Rt\_IFO0880 optimized for biomass maximization 
+    and constrained over five glucose uptake rates.}
+    \label{fig:IFO0880_biomass_max}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{IFO0880_biomass_max_NADPH.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{IFO0880_biomass_max_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model Rt\_IFO0880. The model was optimized for biomass maximization. 
+     Glucose uptake was constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:IFO0880_biomass_max_NADPH_max}
+\end{figure}
+
+
+\textbf{Rt\_IFO0880\_LEBp2023}
+
+In figures \ref{fig:Rt_IFO0880_LEBp2023_biomass_max} and \ref{fig:Rt_IFO0880_LEBp2023_biomass_max_NADPH_max} 
+simulation predictions with model Rt\_IFO0880\_LEBp2023 are shown.
+Exchange fluxes align with other models. On all growth rates the use of ACL is predicted instead of phosphoketolase. 
+(As this model is an updated version of Rt\_IFO0880, it also has two phosphoketolases - FPK and XPK, which fluxes
+have been summed together and represented as phosphoketolase.) 
+On lowest growth rate NADPH is predicted to be produced mainly by aldehyde dehydrogenase and on highest rate by alcohol dehydrogenase.
+% (That indicates unrealistic loops?)
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Rt_IFO0880_LEBp2023_biomass_max.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model Rt\_IFO0880\_LEBp2023 optimized for biomass maximization 
+    and constrained over five glucose uptake rates.}
+    \label{fig:Rt_IFO0880_LEBp2023_biomass_max}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Rt_IFO0880_LEBp2023_biomass_max_NADPH.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Rt_IFO0880_LEBp2023_biomass_max_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model Rt\_IFO0880\_LEBp2023. The model was optimized for biomass maximization. 
+    Glucose uptake was constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:Rt_IFO0880_LEBp2023_biomass_max_NADPH_max}
+\end{figure}
+
+
+
+\subsection{NGAM minimisation as objective function}
+
+NGAM minimisation as objective function was investigated to see whether the use of different objective function gives distinct results. 
+Again the simulations were made under carbon limitation over five glucose uptakes. This objective function also needed constraints 
+on biomass growth rate because otherwise the simulation chooses zero as its flux. Growth rate was constrained to the values that each model
+predicted in the simulations optimized for biomass maximisation, because experimental growth rates together with experimental glucose 
+uptakes were infeasible for the models. 
+
+For all simulations, the exchange fluxes are the same as with biomass maximisation as objective function. The models that predicted phosphoketolase 
+in previous simulations, predicted it again. Same is about prediction of ACL. For some models the production of NADPH differs with this objective function.
+
+\textbf{rhto-GEM}
+
+Model rhto-GEM optimized for NGAM minimisation (see figures \ref{fig:rhtoGEM_NGAM_min} and \ref{fig:rhtoGEM_nm_NADPH}) predicts similar fluxes as with 
+previous objective function. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{rhtoGEM_NGAM_min.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model rhto-GEM optimized for NGAM minimization 
+    and constrained over five growth and glucose uptake rates.}
+    \label{fig:rhtoGEM_NGAM_min}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rhtoGEM_nm_NADPH.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rhtoGEM_nm_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model rhto-GEM. The model was optimized for NGAM minimization. 
+    Glucose uptake with growth rate were constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:rhtoGEM_nm_NADPH}
+\end{figure}
+
+
+
+\textbf{iRhtoC}
+
+iRhtoC optimized for NGAM minimisation (figures \ref{fig:iRhtoC_NGAM_min} and \ref{fig:iRhtoC_nm_NADPH}) also predicts similar fluxes as with 
+previous objective function. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{iRhtoC_NGAM_min.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model iRhtoC optimized for NGAM minimization 
+    and constrained over five growth and glucose uptake rates.}
+    \label{fig:iRhtoC_NGAM_min}
+
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{iRhtoC_nm_NADPH_min.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{iRhtoC_nm_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model iRhtoC. The model was optimized for NGAM minimization. 
+    Glucose uptake with growth rate were constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:iRhtoC_nm_NADPH}
+\end{figure}
+
+
+
+\textbf{Rt\_IFO0880}
+
+Model Rt\_IFO0880 optimized for NGAM minimisation (figures \ref{fig:IFO0880_NGAM_min} and \ref{fig:IFO0880_nm_NADPH}) predicts similar intracellular
+fluxes as before, but NADPH production differs. On the lowest growth rate it is predicted that most of NADPH is produced by homoserine dehydrogenase 
+and on highest rate by alcohol dehydrogenase. 
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{IFO0880_NGAM_min.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model Rt\_IFO0880 optimized for NGAM minimization 
+    and constrained over five growth and glucose uptake rates.}
+    \label{fig:IFO0880_NGAM_min}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{IFO0880_nm_NADPH.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{IFO0880_nm_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model Rt\_IFO0880. The model was optimized for NGAM minimization. 
+    Glucose uptake with growth rate were constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:IFO0880_nm_NADPH}
+\end{figure}
+
+
+
+\textbf{Rt\_IFO0880\_LEBp2023}
+
+Rt\_IFO0880\_LEBp2023 optimized for NGAM minimisation (figures \ref{fig:Rt_IFO0880_LEBp2023_NGAM_min} and \ref{fig:Rt_IFO0880_LEBp2023_nm_NADPH}) also predicts 
+similar intracellular fluxes as before, but the production of NADPH differs. On the lowest growth rate it is predicted that most of NADPH is produced by 
+aldehyde dehydrogenase and on highest rate by homoserine dehydrogenase. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Rt_IFO0880_LEBp2023_NGAM_min.png}
+    \caption{Exchange and intracellular fluxes in \textit{R. toruloides} with model Rt\_IFO0880\_LEBp2023 optimized for NGAM minimization 
+    and constrained over five growth and glucose uptake rates.}
+    \label{fig:Rt_IFO0880_LEBp2023_NGAM_min}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Rt_IFO0880_LEBp2023_nm_NADPH.png}
+        % \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h!]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Rt_IFO0880_LEBp2023_nm_NADPH_max.png}
+        % \caption{}
+    \end{subfigure}
+    \caption{NADPH producing and consuming fluxes in \textit{R. toruloides} with model Rt\_IFO0880\_LEBp2023. The model was optimized for NGAM minimization. 
+    Glucose uptake with growth rate were constrained on the lowest (left) and highest (right) rate.}
+    \label{fig:Rt_IFO0880_LEBp2023_nm_NADPH}
+\end{figure}
+
+
+
+
+
+
+

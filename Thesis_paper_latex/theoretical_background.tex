@@ -67,11 +67,6 @@ triacylglycerol (TAG) contained long-chain fatty acids (C16:0
 (palmitic acid), C16:1 (palmitoleic acid), C18:0 (stearic acid), C18:1(oleic acid), and C18:2 (linoleic acid)) and they
 are comparable to vegetable oils \cite{Li2007}, \cite{Vasconcelos2019}.
 
-Lipid accumulation occurs when oleaginous microorganisms are cultivated in a medium with an excess of 
-carbon where other nutrients, particularly nitrogen, is limiting their growth. 
-Therefore, the carbon-to-nitrogen ratio (C/N) plays an important role in triggering
-lipid accumulation. \cite{Lopes2020}
-
 \textit{R. toruloides} occurs naturally in leaves, soil, sea water, etc. It has a broad substrate range, 
 which has made this yeast a popular for producing biological oils from inedible 
 substrates such as pentose sugars and crude glycerol. \cite{Tiukova2019} 
@@ -103,6 +98,64 @@ presence of xylose.\cite{Rekena2023}
 
 
 \section{Overview of cellular growth laws}
+
+Lipid accumulation in oleaginous microorganisms has long been known to be triggered 
+by a nutrient imbalance in the culture medium. When cells run out of a key nutrient, 
+usually nitrogen, excess carbon substrate continues to be assimilated by the cells 
+and converted into storage fat. Cells assimilate carbon quicker than they can convert 
+it into new cells so mechanism for storage the excess carbon is then found by 
+converting it into lipid. Lipid accumulation requires a slow growth rate of the cells 
+to allow the excess carbon to be assimilated faster than it can be converted into 
+biomass so that the surplus carbon is channeled into lipid. 
+With oleaginous yeast the process of lipid accumulation can also 
+be achieved in continuous culture, where is it necessary to grow the 
+cells at a sufficiently low dilution rate (= growth rate) to allow the cells to 
+assimilate the glucose. The results from continuous cultivation studies clearly 
+indicate that the rate of lipid synthesis is slower than the maximum growth rate. \cite{Ratledge2002}
+
+Lipid accumulation occurs when oleaginous microorganisms are cultivated in a medium with an excess of 
+carbon where other nutrients, particularly nitrogen, is limiting their growth. 
+Therefore, the carbon-to-nitrogen ratio (C/N) plays an important role in triggering
+lipid accumulation. \cite{Lopes2020}
+
+What is the biochemical difference between these two groups of very distinct microorganisms? 
+The first major biochemical difference to be identified between the oleaginous and nonoleaginous 
+yeast species was the presence of ATP-citrate lyase in oleaginous yeast during lipid accumulation.
+ACL has proved to be one of the key enzymes that must be present in a eukaryotic microbial 
+cell for it to be able to accumulate substantial amounts of triacylglycerol lipids.
+In those yeasts without ACL, lipid contents of the cell were invariably low. However, 
+some yeasts had ACL activity but did not accumulate lipid,  thus indicating that 
+other enzyme activities were needed to ensure lipid accumulation. In summary, while 
+the possession of ACL activity will not automatically engender lipid accumulation 
+in a microorganism, if the enzyme is absent the cells will be unable to accumulate 
+lipid and will therefore be nonoleaginous. Clearly, other enzyme activities must be 
+in place to determine the extent to which lipids may accumulate in individual 
+organisms. \cite{Ratledge2002}
+
+Malic enzyme has found to be another important enzyme in lipogenesis. It generates 
+NADPH, which is used by fatty acid synthetase (NADPH is generated also by 
+glucose-6-phosphate dehydrogenase, 6-phosphogluconate dehydrogenase, and NADP-dependent 
+isocitrate dehydrogenase). When malic enzymes activity was blocked by using selective inhibitors (sesamol), 
+he content of lipid in the cells was decreased by almost 90\%, from 24\% 
+of the cell biomass to 2\% but — and this was of major significance — without causing 
+any major effect on growth. Thus, as only malic enzyme activity appeared to have been affected 
+by the inhibitor, it was concluded that 
+sesamol was specifically inhibiting both the cytoplamic and membrane-bound malic 
+enzymes, and that without malic enzyme the cell was unable to accumulate lipid or 
+to carry out desaturations of it. The essentiality of malic enzyme for lipid 
+biosynthesis appeared to be established.
+\cite{Ratledge2002}
+
+Wynn and Ratledge (1997) went on to show that in a mutant of \textit{Aspergillus Nidulans} lacking 
+malic enzyme activity, only half the lipid (12\% of the cell dry weight) that had been 
+produced by the competent strain under nitrogen-limited growth conditions was now 
+produced. \cite{Ratledge2002}
+Fatty acid biosynthesis per se is still functional and phospholipids can be produced. 
+Thus, the cell can manage without malic enzyme—it is not absolutely vital—but the cell
+cannot produce storage triacylglycerols in any abundance. Without malic enzyme 
+activity the flux of carbon, from glucose to lipid, is considerably diminished and 
+only essential lipids are produced—presumably by using other sources of NADPH. \cite{Ratledge2002}
+
 
 
 
@@ -138,7 +191,7 @@ knowledge, it is still not possible to completely automatically reconstruct high
 (See appendix A for more detailed reconstruction process.) 
 
 
-\subsection{Constraint-based modeling}
+\textbf{Constraint-based modeling}
 
 Genome-scale metabolic models are widely used to calculate metabolic phenotypes, but as metabolism operates under countless of constraints, they rely on defining a set of constraints. 
 They include constraints that 
@@ -188,7 +241,7 @@ The reconstructed genome-scale networks can be converted into mathematical stoic
 and columns represent individual reactions. This matrix will
 determine the solution space of the metabolic network. GEMs are constrained by (1) the stoichiometry of the
 network; (2) preset upper and lower boundaries for selected reactions; and (3) the assumption of a steady state. \cite{Kerkhoven2014} 
-Overview of a reconstruction of a GEMs is shown in the figure 1.1.
+Overview of a reconstruction of a GEMs is shown in the figure \ref{GEMs}.
 
 
 \begin{figure}[h]
@@ -202,7 +255,7 @@ Overview of a reconstruction of a GEMs is shown in the figure 1.1.
 
 
 
-\subsection{Flux balance analysis}
+\textbf{Flux balance analysis}
 
 % GEMs can simulate metabolic flux distributions by optimization of an objective function that describes the 
 % perceived cellular objective that propels 
@@ -249,7 +302,7 @@ constrained space (see figure below).
 
 \begin{figure}[h]
     \includegraphics[width=\linewidth]{FBA_solution_space.jpg}
-    \caption{conceptual basis of constraint-based modeling and FBA. The figure is from \cite{Orth2010}.}
+    \caption{Conceptual basis of constraint-based modeling and FBA. The figure is from \cite{Orth2010}.}
     \label{Solution space}
 \end{figure}
 
@@ -277,12 +330,12 @@ to the exponential growth rate ($\mu$) of the organism.  \cite{Orth2010}
 The most commonly used objective function in FBA is maximization of the 
 specific growth rate, ATP generation or a certain product formation. FBA is often used for estimating the biotechnological potential of 
 microorganisms and pinpoint genetic manipulations that could improve the performance of a cell. The main applications of 
-FBA are:
-(1) Instructions for metabolic engineering purposes;
-(2) Biological interpretation and discovery through
-contextualizing high-throughput data;
-(3) Development of a computational framework;
-(4) Evolutionary elucidation;
+FBA are:\\
+(1) Instructions for metabolic engineering purposes; \\
+(2) Biological interpretation and discovery through 
+contextualizing high-throughput data; \\
+(3) Development of a computational framework; \\
+(4) Evolutionary elucidation; \\
 (5) Description of multispecies communities. \cite{Kerkhoven2014}
 
 Many computational linear programming algorithms exist, and they can very quickly 
@@ -295,7 +348,7 @@ at steady state. Except in some modified forms, FBA does not account for regulat
 such as activation of enzymes by protein kinases or regulation of gene expression, so its predictions 
 may not always be accurate. \cite{Orth2010}
 
-\subsection{Limitations}
+\textbf{Limitations}
 
 GEMs and kinetic models both have their advantages
 and drawbacks. GEMs are comprehensive but are dependent on a pseudosteady state and in their current form
@@ -315,7 +368,7 @@ model parameters for the whole system. \cite{Kerkhoven2014}
 % Tuua välja need erinevad ülegenoomsed mudelid, mis on loodud ning nende peamied iseärasused ja erinevused üksteisest.
 % NP11, iRhtoC, IFO0880, IFO0880\_jsb, 
 
-\subsection{rhto-GEM}
+\textbf{rhto-GEM}
 
 The first genome-scale model of \textit{R. toruloides} metabolism named rhto-GEM was presented in 2019 by Tiukova et al. The model includes 4869 genes, 
 897 reactions, and 3334 metabolites. The model rhto-GEM, is based on the genome sequence of \textit{R. toruloides} strain 
@@ -343,7 +396,7 @@ As such, rhto-GEM emerges as a valuable tool for future analysis of oleaginous a
 metabolism. \cite{Tiukova2019}
 
 
-\subsection{iRhto1108}
+\textbf{iRhto1108}
 
 During the same year as rhto-GEM by Tiukova et al. \cite{Tiukova2019} was presented, Dinh et al. \cite{Dinh2019} presented another \textit{R. torluoides} 
 genome-scale metabolic model named iRhto1108, collecting and organizing functional genomics data
@@ -401,7 +454,7 @@ detailed range of testing and validation studies promising to aid in future
 investigations of \textit{R. toruloides}. \cite{Dinh2019}
 
 
-\subsection{Rt\_IFO0880}
+\textbf{Rt\_IFO0880}
 
 In 2021 Kim et al. performed multi-omics analysis of lignocellulosic carbon utilization in \textit{R. toruloides} and reconstructed
 the genome-scale metabolic network named Rt\_IFO0880. The
@@ -446,7 +499,7 @@ model presented in this study will be useful for studying and
 engineering \textit{R. toruloides} for lignocellulosic biomass conversion. \cite{Kim2021}
 
 
-\subsection{Rt\_IFO0880\_LEBp2023}
+\textbf{Rt\_IFO0880\_LEBp2023}
 
  In a doctoral thesis focused on the carotenoid production of \textit{R. torluoides} \cite{DeBiaggi2023} the author compared the four existing GEMs 
  of \textit{R. torluoides} (the ones mentioned before and also rhto-GEM\_BioEng, 
@@ -492,7 +545,7 @@ such as ACL. Despite the few updates, the best predictions of the Rt\_IFO0880\_L
  assimilation pathways, the conversion of acetyl-P into acetyl-CoA and the absence of HMG-CoA transport from the mitochondria to the cytosol, 
  (characteristics inherited from its predecessor GEM) and predicts the use of ACL and its involvement in a non-canonical TCA cycle. \cite{DeBiaggi2023}
 
-\subsection{Comparison of the models}
+\textbf{Comparison of the models}
 
 The first model is based on the genome of the NP11 strain, while the other three are based on that of the IFO0880 strain. Both are haploid strains \cite{BANNO1967}; \cite{Zhu2012}. 
 The similarity between the genomes of these strains is approximately 95\% \cite{Schultz2022}.
