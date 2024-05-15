@@ -12,32 +12,28 @@
 % - PP and XPK pathway
 % - ACL and the TCA cycle
 % Extract and analyze cofactor balances
+\section{Models}
 
-Genome-scale metabolic models of \textit{R. toruloides} (JSON files) were obtained from supplemental
-files from publications \cite{Tiukova2019, Dinh2019, Kim2021} and the fourth model \cite{DeBiaggi2023}, 
+Genome-scale metabolic models of \textit{R. toruloides} (JSON files) rhto-GEM, iRhtoC, Rt\_IFO0880 were obtained from supplemental
+files from publications \cite{Tiukova2019, Dinh2019, Kim2021} and the fourth model Rt\_IFO0880\_LEBp2023 \cite{DeBiaggi2023}, 
 made by a group member, was obtained directly from him. 
 
-With all these models, simulations were performed using the COBRApy
-package (version 0.29.0) \cite{Ebrahim2013} in Python (version 3.11.4). 
-Throughout the process, metabolic flux patterns were predicted using flux balance analysis \cite{Orth2010} from COBRApy package
-with the Gurobi mathematical optimization solver (version 11.0.0, Gurobi Optimization Inc.).
-
-All scripts are available in Github repository upon request sent to maive.hanni@gmail.com.
+All scripts are available in Github repository (\url{https://github.com/maivehanni/BSc_thesis}) upon request sent to maive.hanni@gmail.com.
 
 
 \section{Selecting experimental data}
 
 In the simulations the experimental steady-state cultivation data of \textit{R. toruloides} strain IFO0880 in 1 L bioreactor was used.
 The experiment was done by our group and the results have not yet been published. The cultivation process is described in \cite{Rekena2023}. 
-All rates are expressed in $mmol/gDW/h$, and the biomass specific growth rate 
-is expressed as ${1/h}$. The data is shown in the table \ref{table:LabData}.
+All rates are expressed in \unit{mmol/gDW/h}, and the biomass specific growth rate 
+is expressed as \unit{1/h}. The data is shown in the table \ref{table:LabData}.
 
 \begin{table}[h]
     \centering
     \caption{Continuous cultivation results from lab experiments}
     \begin{tabular}{c|c|c|c|c}
         
-            \textbf{Biomass growth rate} & \textbf{Glucose uptake} & \textbf{CO$_2$} & \textbf{O$_2$} & \textbf{Glycerol} \\ \hline
+            \textbf{Biomass growth rate \unit{1/h}} & \textbf{Glucose uptake \unit{mmol/gDW/h}} & \textbf{CO$_2$ \unit{mmol/gDW/h}} & \textbf{O$_2$ \unit{mmol/gDW/h}} & \textbf{Glycerol \unit{mmol/gDW/h}} \\ \hline
             0.049 & 0.476 & 1.171 & 1.083 & almost nothing \\ 
             0.100 & 1.114 & 2.521 & 2.521 & ~ \\ 
             0.151 & 1.648 & 3.854 & 3.851 & ~ \\ 
@@ -59,30 +55,33 @@ is expressed as ${1/h}$. The data is shown in the table \ref{table:LabData}.
 \section{Flux balance analysis and sampling of the solution space} 
 
 % If there is time, would be nice to perform random sampling (like OptGPSampler in cobra) for the key FBA simulations in the thesis.
+Model simulations were performed using the COBRApy
+package (version 0.29.0) \cite{Ebrahim2013} in Python (version 3.11.4) with all four models. 
+Throughout the process, metabolic flux patterns were predicted using flux balance analysis \cite{Orth2010} from COBRApy package with the Gurobi mathematical optimization solver (version 11.0.0, Gurobi Optimization Inc.). 
 
-Growth phenotypes were obtained using FBA with several objective functions. First, before having lab data for glucose uptake, 
-the objective function was set to glucose uptake maximisation and the biomass pseudoreaction, whose flux is equivalent to the growth 
-rate ($h^{1/h}$), was constrained at five different rates (0.05, 0.10, 0.15, 0.2, 0.25, 0.30) (as glucose uptake flux is notated in the model 
-with negative sign, setting the objective to glucose uptake maximisation corresponds to finding the solution space with minimal 
-absolute value of glucose uptake flux). % Try changing the phrasing...
-Model solutions were calculated on five different growth rates and Python's Pandas package was used for constructing 
-dataframes of extracellular and the fluxes of central carbon metabolism enzymes. Matplotlib was used for data visualization.
+The following functions from COBRApy package were used:
+\verb|read_sbml_model()| for importing the metabolic model in SBML format; model.objective for defining the objective function, \verb|model.reactions.get_by_id().bounds| for assigning bounds; \verb|model.optimize()| for calculating the solution (default is the maximization of the objective function and the minimization is achieved by using \verb|model.optimize('minimize')|); \verb|loopless_solution()| for obtaining a new flux distribution, where the sum of absolute non-exchange fluxes is minimized (\verb|loopless_solution()| is based on a previously obtained reference flux distribution with the function \verb|model.optimize()|); \verb|model.reactions.reaction.name| was used for obtaining the names of reactions instead of their IDs.
+Calculated fluxes were stored in a Pandas dataframe and the fluxes of interest were further visualized using Matplotlib package.
 
-Once lab data for steady-state cultivation of \textit{R. toruloides} strain IFO0880 was available, glucose uptake values 
-on five growth rates were used in simulations for model constraining. On carbon limitation the objective
-function was set to biomass maximisation. Again dataframes of the fluxes of interest were made and visualized.
+In silico metabolic flux patterns were obtained using FBA with several objective functions. 
+Model simulations were carried out on five different growth rates.
+Firstly, glucose uptake values 
+over five growth rates, were used in simulations for model constraining. On carbon limitation the objective function was set to biomass maximisation. Dataframes of the fluxes of interest were made and visualized.
 
-Metabolic flux patterns were further investigated using the minimisation of non-growth associated maintenance (NGAM) as objective 
-function with constraining both glucose uptake and growth rate to see if that changes the flux patterns. 
-As the model overestimates glucose uptake need for a specific growth rate, 
-it was not possible to constrain both glucose uptake and growth rate to the values obtained in lab - the solution was infeasible.
-Because of that, in this simulation glucose uptake was constrained to the values obtained in lab, but growth rate was constrained to 
-the growth rate values obtained in previous simulation when solution was optimized for maximum growth rate on specified glucose uptake. 
+To see whether different objctive function changes the flux patterns, metabolic flux patterns were further investigated using the minimisation of non-growth associated maintenance (NGAM) reaction as an objective function. Both the glucose uptake and growth rate were constrained. 
+As the model overestimates glucose uptake need for a specific growth rate, it was not possible to constrain both glucose uptake and growth rate to the values obtained in lab - the solution was infeasible. Because of that, in this simulation glucose uptake was constrained to the values obtained in lab, but growth rate was constrained to the growth rate values obtained in previous simulation when model was optimized for biomass maximisation. On average, model overestimation of glucose uptake per growth rate was around 25\% of experimental glucose uptake rate and it was considered a reasonable assumption in this case.
 
-For comparison of cofactor balances between the models, pie plots were made to visualize the production and consumption of NADPH, NADH and ATP. % Maybe we won't include ATP bc it was the same  
-Cofactor balances were simulated with biomass maximisation and NGAM minimisation 
-as the objective function, as the lab data was available.
+For comparison of cofactor balances between the models, pie plots were made using Matplotlib to visualize the production and consumption of NADPH, NADH and ATP. % Maybe we won't include ATP bc it was the same  
+Cofactor balances were visualized for simulations with both, biomass maximisation and NGAM minimisation, 
+as the objective function. Information about production and consumption of specific cofactors, was extracted from solution fluxes using the COBRApy functions 
+\vspace{-0.4cm} % \setlist{nolistsep}
+\begin{itemize}[noitemsep]
+    \item \verb|model.metabolites.metabolite.summary().producing_flux| and
+    \item \verb|model.metabolites.metabolite.summary().consuming_flux|. 
+\end{itemize}
+\vspace{-0.4cm} % \setlist{nolistsep}
+Reactions that had the same absolute value in producing and consuming fluxes were excluded. Results were plotted on a pie chart. The reactions that had a lower proportion than 5\% of the total flux of the corresponding cofactor, were summed together and represented in the sector `Other consuming' or `Other producing', respectively.
 
-Finally, for some models the central carbon metabolism fluxes were visualized with Escher \cite{King2015}. On Escher platform it is possible
-to create metabolic maps based on the reactions of a given GEM, which can then be fed with the simulated
-flux distributions to have a better overview of used metabolic pathways.
+% Finally, for some models the central carbon metabolism fluxes were visualized with Escher \cite{King2015}. On Escher platform it is possible
+% to create metabolic maps based on the reactions of a given GEM, which can then be fed with the simulated
+% flux distributions to have a better overview of used metabolic pathways.

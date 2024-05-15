@@ -10,7 +10,11 @@ os.environ["R_HOME"] = f"{os.environ['CONDA_PREFIX']}\\Lib\\R"
 import rpy2.robjects
 from plotnine import *
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
 from cobra.flux_analysis.loopless import loopless_solution
+from matplotlib import colormaps
+import matplotlib
+
 
 def all_fluxes_biomass_max_df(model_path: str, glucose_uptakes: list, biomass_rxn_ID: str, glc_ID: str):
     # Creating an empty dataframe, which has enzymes as columns and as many rows as glucose uptakes
@@ -113,29 +117,27 @@ def plot_ex_intr_fluxes(all_fluxes_df, exchange_fluxes, intracellular_fluxes, AC
     x = all_fluxes_df[biomass_rxn_ID]
     y = np.abs(exchange_fluxes)
     
-    ax[0].plot(x1, y1, '--', label= ['Exp glucose exchange', 'Exp oxygen exchange', 'Exp carbon dioxide exchange']) #
+    ax[0].plot(x1, y1, '--', label= ['Exp glucose exchange', 'Exp oxygen exchange', 'Exp carbon dioxide exchange'], linewidth=0.85) #
     ax[0].plot(x, y, '-', label= y.columns) #
     
     ax[0].set_xlim([0.024, 0.24])  
     ax[0].legend(fontsize=10, loc='upper left')
-    ax[0].set_title("Exchange fluxes") # fluxes biomass maximization
+    ax[0].set_title("(a) Exchange fluxes", fontsize = 13) # fluxes biomass maximization
     ax[0].set_xlabel('Biomass growth rate $(1/h)$')
     ax[0].set_ylabel('Flux $(mmol/gDW/h)$')
 
     y3 = np.abs(intracellular_fluxes)
     y4 = np.abs(ACL_phosphoketolase)
 
-    ax[1].plot(x, y3, '-', label= y3.columns) #
-    ax[1].plot(x, y4, '--', label= y4.columns) # ACL and phosphoketolase
+    ax[1].plot(x, y3, '--', label= y3.columns, linewidth=0.85) #
+    ax[1].plot(x, y4, '-', label= y4.columns, linewidth=2) # ACL and phosphoketolase
 
     ax[1].legend(fontsize=10, loc='upper left')
-    ax[1].set_title("Intracellular fluxes")
+    ax[1].set_title("(b) Intracellular fluxes", fontsize = 13)
     ax[1].set_xlabel('Biomass growth rate $(1/h)$')
     ax[1].set_ylabel('Flux $(mmol/gDW/h)$')
     
-    return fig
-    
-    
+    return fig    
     
 def cofactor_balances_biomass_max(model_path: str, cofactor_list: list, glucose_uptakes: list, i: int, biomass_rxn_ID: str, glc_ID: str):
     producing_fluxes = pd.DataFrame() 
@@ -214,7 +216,7 @@ def cofactor_balances_NGAM_min(model_path: str, cofactor_list: list, glucose_upt
 
 
 def cofactor_fluxes_pie_chart(model_path: str, cofactor_fluxes, **fig_kw):
-    threshold = 0.05# threshold shows the percent of the flux for including in others sector on pie chart 
+    threshold = 0.025 # threshold shows the percent of the flux for including in others sector on pie chart 
     # The three lines below are for grouping together reactions with low fluxes in producing
     producing_cofactor_fluxes_draw = cofactor_fluxes[(cofactor_fluxes['flux'] > 0).copy()]    
     producing_cofactor_fluxes_draw.loc[producing_cofactor_fluxes_draw['percent'] < threshold, 'reaction'] = 'Other producing'
@@ -250,6 +252,9 @@ def cofactor_fluxes_pie_chart(model_path: str, cofactor_fluxes, **fig_kw):
          
     pie_chart = plt.pie(producing_and_consuming_fluxes.loc[:, 'percent'], labels = reaction_names_w_flux)  #autopct='%1.1f%%' pd.concat([producing_cofactor_fluxes_draw, consuming_cofactor_fluxes_draw])[['flux', 'percent']]
     # plt.tight_layout()
+    
+    fig.set_size_inches(15, 6)
+
 
     # plt.legend(producing_and_consuming_fluxes, reaction_names_w_flux, title = 'Reaction names', loc="center left",  bbox_to_anchor=(1, 0, 0.5, 1))
     
