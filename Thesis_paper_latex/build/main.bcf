@@ -2470,12 +2470,13 @@
     <bcf:citekey order="99" intorder="2">Dinh2019</bcf:citekey>
     <bcf:citekey order="99" intorder="3">Kim2021</bcf:citekey>
     <bcf:citekey order="100" intorder="1">DeBiaggi2023</bcf:citekey>
-    <bcf:citekey order="101" intorder="1">Rekena2023</bcf:citekey>
-    <bcf:citekey order="102" intorder="1">Ebrahim2013</bcf:citekey>
-    <bcf:citekey order="103" intorder="1">Orth2010</bcf:citekey>
-    <bcf:citekey order="104" intorder="1">DeBiaggi2023</bcf:citekey>
-    <bcf:citekey order="105" intorder="1">Thiele2010</bcf:citekey>
-    <bcf:citekey order="106" intorder="1">Thiele2010</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">Pinheiro2020</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">Lahtvee2017</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">Verduyn1992</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">Shen2013</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">Ebrahim2013</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">Orth2010</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">DeBiaggi2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

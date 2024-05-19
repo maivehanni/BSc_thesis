@@ -14,6 +14,7 @@ from matplotlib.pyplot import figure
 from cobra.flux_analysis.loopless import loopless_solution
 from matplotlib import colormaps
 import matplotlib
+from cobra.sampling import sample
 
 
 def all_fluxes_biomass_max_df(model_path: str, glucose_uptakes: list, biomass_rxn_ID: str, glc_ID: str):
@@ -56,7 +57,7 @@ def all_fluxes_NGAM_min_df(model_path: str, glucose_uptakes: list, growth_rates:
         model.reactions.get_by_id(biomass_rxn_ID).bounds = growth_rates[i], growth_rates[i]
 
          
-        model.optimize('minimize')
+        model.optimize('minimize') #
         solution = loopless_solution(model)
         
         all_fluxes_NGAM_min.loc[i] = solution.fluxes[[*enzymes.index]].values
@@ -186,7 +187,7 @@ def cofactor_balances_NGAM_min(model_path: str, cofactor_list: list, glucose_upt
     model.reactions.get_by_id(biomass_rxn_ID).bounds = growth_rates[i], growth_rates[i]
 
         
-    model.optimize('minimize')
+    model.optimize('minimize') #
     solution = loopless_solution(model)
         
     for metabolite in cofactor_list:
@@ -272,3 +273,8 @@ def all_fluxes_to_excel(path: str, all_fluxes_df):
 
 def fluxes_to_csv(path: str, all_fluxes_df, i: int):
     all_fluxes_df.loc[i].to_csv(path, index=True)
+    
+    
+def flux_sampling():
+    s = sample(model, 100)
+    s.DESCR()

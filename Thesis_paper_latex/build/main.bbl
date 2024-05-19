@@ -3351,6 +3351,308 @@
       \verb 10.1038/s41586-022-04475-w
       \endverb
     \endentry
+    \entry{Pinheiro2020}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b0cf5321d1211e4e0d999875d5613780}{%
+           family={Pinheiro},
+           familyi={P\bibinitperiod},
+           given={Marina\bibnamedelima Julio},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1db9e51485ca7e50066fee3b36f03409}{%
+           family={Bonturi},
+           familyi={B\bibinitperiod},
+           given={Nemailla},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc40ab904f0b16abc51d3a6441b2f866}{%
+           family={Belouah},
+           familyi={B\bibinitperiod},
+           given={Isma},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1a6ba5cbb28f2d23e4742aac405c2ec}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={Everson\bibnamedelima Alves},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=834b35b58ff288384eb2b0693f85a803}{%
+           family={Lahtvee},
+           familyi={L\bibinitperiod},
+           given={Petri-Jaan},
+           giveni={P\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{e0a469c11a1436a8b447c55b396c4b62}
+      \strng{fullhash}{6d7c0896d1523c15b9172c40fb316e7f}
+      \strng{bibnamehash}{e0a469c11a1436a8b447c55b396c4b62}
+      \strng{authorbibnamehash}{e0a469c11a1436a8b447c55b396c4b62}
+      \strng{authornamehash}{e0a469c11a1436a8b447c55b396c4b62}
+      \strng{authorfullhash}{6d7c0896d1523c15b9172c40fb316e7f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2296-4185}
+      \field{journaltitle}{Frontiers in Bioengineering and Biotechnology}
+      \field{month}{8}
+      \field{title}{Xylose Metabolism and the Effect of Oxidative Stress on Lipid and Carotenoid Production in Rhodotorula toruloides: Insights for Future Biorefinery}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.3389/fbioe.2020.01008
+      \endverb
+    \endentry
+    \entry{Lahtvee2017}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=834b35b58ff288384eb2b0693f85a803}{%
+           family={Lahtvee},
+           familyi={L\bibinitperiod},
+           given={Petri-Jaan},
+           giveni={P\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b646aa8527a73d5ddab5c7e70054811}{%
+           family={Sánchez},
+           familyi={S\bibinitperiod},
+           given={Benjamín\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a588e91a54d01cd7ca0648c0a8a3d7fc}{%
+           family={Smialowska},
+           familyi={S\bibinitperiod},
+           given={Agata},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=580b948bad12be7774a1de5a446d204e}{%
+           family={Kasvandik},
+           familyi={K\bibinitperiod},
+           given={Sergo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c0034cdad852b3cd74b31cdcf321302}{%
+           family={Elsemman},
+           familyi={E\bibinitperiod},
+           given={Ibrahim\bibnamedelima E.},
+           giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d921765c41724350cac28035d4416b63}{%
+           family={Gatto},
+           familyi={G\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7367c4123d321556d38803b11cd83308}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{08ce660641c742c3a03f774bd162c61c}
+      \strng{fullhash}{79c83853c961e7071e25c805a2997c1c}
+      \strng{bibnamehash}{08ce660641c742c3a03f774bd162c61c}
+      \strng{authorbibnamehash}{08ce660641c742c3a03f774bd162c61c}
+      \strng{authornamehash}{08ce660641c742c3a03f774bd162c61c}
+      \strng{authorfullhash}{79c83853c961e7071e25c805a2997c1c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2405-4712}
+      \field{journaltitle}{Cell Systems}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Absolute Quantification of Protein and mRNA Abundances Demonstrate Variability in Gene-Specific Translation Efficiency in Yeast}
+      \field{volume}{4}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{495\bibrangedash 504.e5}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.cels.2017.03.003
+      \endverb
+    \endentry
+    \entry{Verduyn1992}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=005fdfa2026228f0f5b885c9a14039f9}{%
+           family={Verduyn},
+           familyi={V\bibinitperiod},
+           given={Cornelis},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c52d5c89a2116391f8d193ce5634fe6}{%
+           family={Postma},
+           familyi={P\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=415c4b486066d0e5eaeb478f332deaea}{%
+           family={Scheffers},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi Alexander},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ac1d56c88f3ffdb24ae2fadea175e9f}{%
+           family={Van\bibnamedelima Dijken},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Johannes\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{7fe988b0450f9b7d4cceb95056297363}
+      \strng{fullhash}{cd4fa48ea8b96a53a1242e2cbd2d5174}
+      \strng{bibnamehash}{7fe988b0450f9b7d4cceb95056297363}
+      \strng{authorbibnamehash}{7fe988b0450f9b7d4cceb95056297363}
+      \strng{authornamehash}{7fe988b0450f9b7d4cceb95056297363}
+      \strng{authorfullhash}{cd4fa48ea8b96a53a1242e2cbd2d5174}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1097-0061}
+      \field{journaltitle}{Yeast}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Effect of benzoic acid on metabolic fluxes in yeasts: A continuous‐culture study on the regulation of respiration and alcoholic fermentation}
+      \field{volume}{8}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{pages}{501\bibrangedash 517}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1002/yea.320080703
+      \endverb
+    \endentry
+    \entry{Shen2013}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=bb75b0659030e9593721dd5435fdb630}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Hongwei},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=504d2e7121600c8076f8b80853463250}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={Zhiwei},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ea8ccbd198c606ea24c20d33ad30bb4}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xiaobing},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27277fb1d3ec565a4e39413aa1324e4e}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Guojie},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05588b31c69f207d4d8e1ff6aff8349b}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Fengwu},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbb1920ab6ebd76b79efba844b03ec47}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zongbao\bibnamedelima K.},
+           giveni={Z\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{637590568f9a9d1d45b00ac1ab72f04e}
+      \strng{fullhash}{bece4391fa6afb47bcd378721e328f28}
+      \strng{bibnamehash}{637590568f9a9d1d45b00ac1ab72f04e}
+      \strng{authorbibnamehash}{637590568f9a9d1d45b00ac1ab72f04e}
+      \strng{authornamehash}{637590568f9a9d1d45b00ac1ab72f04e}
+      \strng{authorfullhash}{bece4391fa6afb47bcd378721e328f28}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-1656}
+      \field{journaltitle}{Journal of Biotechnology}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Kinetics of continuous cultivation of the oleaginous yeast Rhodosporidium toruloides}
+      \field{volume}{168}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{85\bibrangedash 89}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.jbiotec.2013.08.010
+      \endverb
+    \endentry
+    \entry{Ebrahim2013}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b05043062488d7f7270498dc64290c72}{%
+           family={Ebrahim},
+           familyi={E\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92e7180320e3d9859daf41d0d2cd94b1}{%
+           family={Lerman},
+           familyi={L\bibinitperiod},
+           given={Joshua\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=671aeb8decdb8c2284aae5e2f2c9342b}{%
+           family={Palsson},
+           familyi={P\bibinitperiod},
+           given={Bernhard\bibnamedelima O},
+           giveni={B\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12f0010cbf350108bf38e09781093195}{%
+           family={Hyduke},
+           familyi={H\bibinitperiod},
+           given={Daniel\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{8c37dff68aee37fd2ad486d7b38b8c12}
+      \strng{fullhash}{2c9098270484803ce5898997f5ac873d}
+      \strng{bibnamehash}{8c37dff68aee37fd2ad486d7b38b8c12}
+      \strng{authorbibnamehash}{8c37dff68aee37fd2ad486d7b38b8c12}
+      \strng{authornamehash}{8c37dff68aee37fd2ad486d7b38b8c12}
+      \strng{authorfullhash}{2c9098270484803ce5898997f5ac873d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1752-0509}
+      \field{journaltitle}{BMC Systems Biology}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{COBRApy: COnstraints-Based Reconstruction and Analysis for Python}
+      \field{volume}{7}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1186/1752-0509-7-74
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
