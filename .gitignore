@@ -10,3 +10,13 @@ Thesis_paper_latex/
 .vscode/
 Thesis_pdf/
 build/
+# .gitignore
+gurobi.log
+Results/
+Kokkuvõte/
+Metaandmed/
+Model_files/
+Python_scripts/__pycache__/
+Python_scripts/Knock_outs/
+Python_scripts/Training_simulations/
+Python_scripts/Thesis_simulations_all_models/functions_test.ipynb

@@ -3,21 +3,32 @@
 \addcontentsline{toc}{chapter}{Introduction}
 
 % Sissejuhatuses esitatakse lühidalt (1-2 lk) probleemi tutvustus ja teema valiku põhjendus, töö probleem
-% ja eesmärk. Tuuakse välja teema aktuaalsus ja uudsus.
+% ja eesmärk. Tuuakse välja teema aktuaalsus ja uudsus. Sissejuhatuse lõpus tuuakse eraldi lõigus välja uurimistöö konkreetne eesmärk.
 
 % Introduction is going to be still about how FBA in R. toruloides has been analyzed on a rather general level, but to aid metabolic 
 % engineering, we need to understand it more. Then you introduce different models, describe what 
 % they did, mention that in S. cerevisiae very detailed FBA studies have been carried out, so more 
-% specific FBA analysis in R. toruloides is necessary… That is why most of the writing is good to 
+% specific FBA analysis in R. toruloides is necessary. That is why most of the writing is good to 
 % do at the end when all is more clear.
 
+To combat climate change and reduce dependence on fossil-based resources, numerous countries worldwide are transitioning towards a bio-based economy. This transition necessitates innovative processes for the sustainable production of chemicals, materials, and fuels. However, the current production of biodiesel from oilseeds and waste oils is insufficient to meet global demand \cite{Koutinas2014}, highlighting the need for biofuels derived from non-edible sources. 
 
-% Hea lause
+Microbial oils, also known as single-cell oils (SCOs), represent a promising alternative. These oils, produced by oleaginous microorganisms, do not compete with the food sector and can utilize low-value waste streams. The oleaginous yeast \textit{Rhodotorula toruloides} is particularly noteworthy - it is capable of accumulating very high amounts of lipids and what is more, it has good tolerance to inhibitory compounds found in biomass hydrolysates and a broad substrate range \cite{Bonturi2017}. 
+Metabolic pathways enabling lipid production in \textit{R. toruloides} have been generally defined from earlier systems biology studies, however their operation is not fully understood.
+
+Genome-scale models (GEMs) offer a comprehensive approach to investigate microbial metabolism. For \textit{R. toruloides}, several genome-scale metabolic models have been developed independently, but no comprehensive comparison of the simulated metabolic fluxes through pathways generating lipid precursors for these GEMs has been done. 
+
+This thesis presents a comparison of predictions from rhto-GEM \cite{Tiukova2019}, iRhtoC \cite{Dinh2019}, Rt\_IFO0880 \cite{Kim2021}, and Rt\_IFO0880\_LEBp2023 \cite{DeBiaggi2023} in lipogenesis focused central carbon metabolism. 
+To present a comprehensive overview of current situation in metabolic model development for \textit{R. toruloides}, flux balance analysis (FBA) using two different objective functions, biomass maximization and non-growth associated maintenance (NGAM), was performed to carry out metabolic model simulations using continuous cultivation data of \textit{R. toruloides}.
+
+Results are presented in two chapters. The first chapter presents the differences in flux predictions using biomass maximization as an objective function by all models. The second chapter explores the differences in flux predictions by Rt\_IFO0880-based models using the NGAM as an objective function aiming at comparison of the metabolic activity in pathways devoted to nicotinamide adenine dinucleotide phosphate (NADPH) regeneration, a cofactor essential for lipid biosynthesis.
+% The results reveal that the models use different pathways for the production of main lipid precursor, namely acetyl-coenzyme A (acetyl-CoA), with a clear preference for either phosphoketolase or ATP-citrate lyase. In regard to the regeneration of the cofactor nicotinamide adenine dinucleotide phosphate (NADPH), that is also crucial for lipid production, the predictions vary between the oxidative pentose phosphate pathway (oxPPP) or other pathways.
+
 % \textit{R. toruloides} has been target of significant research efforts
 % including genome (re)sequencing, functional genomics analyses, differential omics characterization, determination of macromolecular composition, and growth
 % kinetics in a continuous culture. These experiments have ushered an improved understanding of \textit{R. toruloides}
 % metabolism and provided the basis for the reconstruction of a metabolic
 % model with genome-wide coverage. \cite{Dinh2019}
 
-
 % ACL has not been found to be present in non-oleaginous yeasts. \cite{Vorapreeda2012}
+

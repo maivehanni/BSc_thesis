@@ -395,14 +395,6 @@ INPUT ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH1.png
 INPUT ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH1.png
 INPUT ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH1.png
 INPUT ./Pictures/Rt_IFO0880_LEBp2023_biomass_max_NADPH1.png
-INPUT ./Pictures/iRhtoC_nm_NADPH_min.png
-INPUT ./Pictures/iRhtoC_nm_NADPH_min.png
-INPUT ./Pictures/iRhtoC_nm_NADPH_min.png
-INPUT ./Pictures/iRhtoC_nm_NADPH_min.png
-INPUT ./Pictures/iRhtoC_nm_NADPH1.png
-INPUT ./Pictures/iRhtoC_nm_NADPH1.png
-INPUT ./Pictures/iRhtoC_nm_NADPH1.png
-INPUT ./Pictures/iRhtoC_nm_NADPH1.png
 INPUT ./Pictures/IFO0880_nm_NADPH.png
 INPUT ./Pictures/IFO0880_nm_NADPH.png
 INPUT ./Pictures/IFO0880_nm_NADPH.png
@@ -440,6 +432,7 @@ INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

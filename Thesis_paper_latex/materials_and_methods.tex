@@ -24,33 +24,32 @@ All scripts are available in Github repository (\url{https://github.com/maivehan
 \section{Selecting experimental data} \label{Exp_data}
 
 In the simulations, the experimental steady-state cultivation data of \textit{R. toruloides} strain IFO0880 in 1 L lab-scale bioreactors (Applikon Biotechnology, Delft, Netherlands) was used.
-The experiment was done by our group and the results have not yet been published. The cultivation process is described in more detail in \cite{Pinheiro2020}, with the exception that the continuous cultivation regime was used instead of batch. Briefly, the cultivations were performed at pH 6.0, controlled by the addition of 2 \unit{mol/L} KOH; dissolved oxygen was maintained at greater than 25\% thanks to keeping the airflow at 1-\unit{vvm} and stirring speeds 400-600 \unit{rpm}. Cultivation medium contained glucose 10 \unit{g/L} as the sole carbon source, 5 \unit{g/L} (NH$_4$)$_2$SO$_4$, 3 \unit{g/L} KH$_2$PO$_4$, 0.5 \unit{g/L} MgSO$_4$ heptahydrate \cite{Lahtvee2017}, supplemented with vitamins and minerals according to Verduyn \cite{Verduyn1992}. Bioreactors were equipped with gas analyser (BlueSens gas sensor GmbH, Herten, Germany) used for measuring the composition of CO$_2$ and O$_2$ in the gas outflow. Optical density was monitored using a Bug Lab BE3000 Biomass Monitor (Bug Lab, Concord, CA, United States).
+The experiment was done by TalTech Food Tech and Bioengineering research group members and the results have not yet been published. The cultivation process is described in more detail in \cite{Pinheiro2020}, with the exception that the continuous cultivation regime was used here instead of batch. Briefly, the cultivations were performed at pH 6.0, controlled by the addition of 2 \unit{mol/L} KOH; dissolved oxygen was maintained at greater than 25\% thanks to keeping the airflow at 1-\unit{vvm} and stirring speeds 400-600 \unit{rpm}. Cultivation medium contained glucose 10 \unit{g/L} as the sole carbon source, 5 \unit{g/L} (NH$_4$)$_2$SO$_4$, 3 \unit{g/L} KH$_2$PO$_4$, 0.5 \unit{g/L} MgSO$_4$ heptahydrate \cite{Lahtvee2017}, supplemented with vitamins and minerals according to Verduyn \cite{Verduyn1992}. Bioreactors were equipped with gas analyser (BlueSens gas sensor GmbH, Herten, Germany) used for measuring the composition of CO$_2$ and O$_2$ in the gas outflow.
 Specific rates of consumption and production are expressed in \unit{mmol/gDW/h}, and the biomass specific growth rate is expressed as \unit{1/h}. The data is shown in the table \ref{table:LabData}.
-
-\begin{table}[h]
+\begin{table}[H]
     \centering
-    \caption{Continuous cultivation results from lab experiments}
-    \begin{tabular}{p{0.3\linewidth}|p{0.3\linewidth}|p{0.35\linewidth}}
+    \caption{\textit{R. toruloides} strain IFO0880 continuous cultivation results from lab experiments. Cultivations were carried out in 1 L bioreactors, at pH 6.0, airflow at 1-\unit{vvm}, stirring 400-600 \unit{rpm}. Cultivation medium contained glucose 10 \unit{g/L}, 5 \unit{g/L} (NH$_4$)$_2$SO$_4$, 3 \unit{g/L} KH$_2$PO$_4$, 0.5 \unit{g/L} MgSO$_4$ heptahydrate, supplemented with vitamins and minerals. Bioreactors were equipped with gas analyser.}
+    \begin{tabular}{p{0.15\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}}
         % {r|r|r}
-            \textbf{Biomass growth rate \unit{\mu} \unit{1/h}} & \textbf{Glucose uptake rate \unit{r_{glu}} \unit{mmol/gDW/h}} & \textbf{Glycerol secretion rate \unit{r_{gly}} \unit{mmol/gDW/h}} \\ \hline
-            0.049 & 0.476 & ~\\ 
-            0.100 & 1.114 & ~ \\ 
-            0.151 & 1.648 & $<0.02$\\ 
-            0.203 & 2.305 & ~ \\ 
-            0.25 & - & ~  \\ 
-            0.301 & 3.1 & ~ \\ 
+            \textbf{Specific growth rate $\mu$ \unit{1/h}} & \textbf{Specific glucose uptake rate $r_{glu}$ \unit{mmol/gDW/h}} & \textbf{Specific O$_2$ uptake rate $r_{O_2}$ \unit{mmol/gDW/h}} & \textbf{Specific CO$_2$ secretion rate $r_{CO_2}$ \unit{mmol/gDW/h}} & \textbf{Specific glycerol secretion rate $r_{gly}$ \unit{mmol/gDW/h}} \\ \hline
+            0.049 & 0.476 & 1.083 & 1.171 &  ~\\ 
+            0.100 & 1.114 & 2.521 & 2.521 &  ~ \\ 
+            0.151 & 1.648 & 3.851 & 3.854 &  $<0.02$\\ 
+            0.203 & 2.305 & 4.352 & 5.834 &  ~ \\ 
+            0.25 & - & - & - & ~  \\ 
+            0.301 & 3.1 & 6.327 & 7.415 &  ~ \\ 
         \end{tabular}
     \label{table:LabData}
 \end{table}
 
-% Table with O2 and CO2
-% \textbf{Biomass growth rate \unit{\mu} \unit{1/h}} & \textbf{Glucose uptake rate \unit{r} \unit{mmol/gDW/h}} & \textbf{CO$_2$ \unit{mmol/gDW/h}} & \textbf{O$_2$ \unit{mmol/gDW/h}} & \textbf{Glycerol secretion rate \unit{r_{gly}} \unit{mmol/gDW/h}} \\ \hline
-% 0.049 & 0.476 & 1.171 & 1.083 & ~\\ 
-% 0.100 & 1.114 & 2.521 & 2.521 & ~ \\ 
-% 0.151 & 1.648 & 3.854 & 3.851 & $<0.02$\\ 
-% 0.203 & 2.305 & 5.834 & 4.352 & ~ \\ 
-% 0.25 & - & - & - & ~  \\ 
-% 0.301 & 3.1 & 7.415 & 6.327 & ~ \\ 
+% Table wo O2 and CO2
+% \textbf{Biomass growth rate $\mu$ \unit{1/h}} & \textbf{Glucose uptake rate $r_{glu}$ \unit{mmol/gDW/h}} & \textbf{Glycerol secretion rate \unit{r_{gly}} \unit{mmol/gDW/h}} \\ \hline
+% 0.049 & 0.476 & ~\\ 
+% 0.100 & 1.114 & ~ \\ 
+% 0.151 & 1.648 & $<0.02$\\ 
+% 0.203 & 2.305 & ~ \\ 
+% 0.25 & - & ~  \\ 
+% 0.301 & 3.1 & ~ \\ 
 
 
 \section{Biomass equation in the models}
@@ -63,7 +62,7 @@ Specific rates of consumption and production are expressed in \unit{mmol/gDW/h},
 % Rhodosporidium toruloides]
 
 For all simulations, the default biomass composition of each model was used, respectively. In the models, the biomass composition is represented by the biomass equation and corresponds to the biomass contents measured in respective publications. 
-In the models rhto-GEM, iRhtoC, Rt\_IFO0880$\&$Rt\_IFO0880\_LEBp202, the lipid content, which is the most important parameter for present study, is .., 12.3\% and $<10$\%, respectively. In all models, the lipid composition is comparable. What is more, these values are similar to the lipid content of continuous cultivation of \textit{R. toruloides} reported by Shen et al. \cite{Shen2013} and thus correspond to the physiological data used in the simulations (section \ref{Exp_data}).
+In the models rhto-GEM, iRhtoC and Rt\_IFO0880-based models, the lipid content, which is the most important parameter for present study, is around \%, 12.3\% and $<10$\%, respectively. In all models, the lipid composition is comparable. What is more, these values are similar to the lipid content of continuous cultivation of \textit{R. toruloides} reported by Shen et al. \cite{Shen2013} and thus correspond to the physiological data used in the simulations (section \ref{Exp_data}).
 
 \section{Flux balance analysis} 
 
@@ -86,15 +85,14 @@ The following functions from COBRApy were used:
 Calculated fluxes were stored in a Pandas (version 2.1.3) dataframe and the fluxes of interest were further visualized using Matplotlib (version 3.8.2) package.
  
 Model simulations were carried out on five different growth rates.
-Firstly, glucose uptake rate \unit{r_{glu}} values
+Glucose uptake rate $r_{glu}$ values
 over five growth rates, were used as lower and upper bounds (a$_i$ and b$_i$) on the glucose exchange reaction (reaction ID: r\_1714 in model rhto-GEM and EX\_glc\_\_D\_e in others; equation: extracellular D-glucose <=>) to reach an allowable solution space
-in simulations for model constraining. Amino acid uptake was not allowed, as in experiments, from where the physiological data used is simulations is obtained, defined mineral medium was used. CO$_2$ and O$_2$ exchange rates were left unconstrained.
+in simulations for model constraining. Amino acid uptake was not allowed, as in experiments, from where the physiological data used in simulations is obtained, defined mineral medium was used. CO$_2$ and O$_2$ exchange rates were left unconstrained. The flux results of the five simulations, with different constrains on specific glucose uptake rate, were later concatenated into one dataframe.
 
-On carbon limitation the objective function was set to biomass maximisation (reaction ID: r\_4041 (in model rhto-GEM), Biomass\_Rt\_Clim (in iRhtoC), BIOMASS\_RT (in other two)).
-Minimisation of non-growth associated maintenance (NGAM) reaction was set as an objective function (r\_4046, ATPM\_c, ATPM, respectively; ATP[c] + H$_2$O[c] => ADP[c] + H$^+$[c] + phosphate[c] ([c] indicates that the respective metabolite is in cytoplasm)). Solution space was constrained by setting upper and lower bounds to glucose exchange and biomass reaction. 
+Firstly, simulations were carried out on carbon limitation, with the objective function set to biomass maximisation (reaction ID: r\_4041 (in model rhto-GEM), Biomass\_Rt\_Clim (in iRhtoC), BIOMASS\_RT (in Rt\_IFO0880-based models)). Secondly, simulations with minimisation of non-growth associated maintenance (NGAM) reaction as an objective function were carried out (r\_4046, ATPM\_c, ATPM, respectively; ATP[c] + H$_2$O[c] => ADP[c] + H$^+$[c] + phosphate[c] ([c] indicates that the respective metabolite is in cytoplasm)). Solution space was constrained by setting upper and lower bounds to glucose exchange and biomass reaction. 
 As the model overestimates glucose uptake need for a specific growth rate, it was not possible to constrain both glucose uptake and growth rate to the values obtained in lab - the solution was infeasible. Because of that, in this simulation glucose uptake was constrained to the values obtained in lab, but growth rate was constrained to the growth rate values obtained in previous simulation when model was optimized for biomass maximisation. On average, model overestimation of glucose uptake per growth rate was around 25\% of experimental glucose uptake rate and it was considered a reasonable assumption in this case.
 
-For comparison of cofactor balances between the models, pie plots were made using Matplotlib to visualize the production and consumption of NADPH, NADH and ATP. % Maybe we won't include ATP bc it was the same  
+For comparison of cofactor balances between the models, pie plots were made using Matplotlib to visualize the production and consumption of NADPH. %, NADH and ATP. % Maybe we won't include ATP bc it was the same  
 Cofactor balances were visualized for simulations with both, biomass maximisation and NGAM minimisation, 
 as the objective function. Information about production and consumption of specific cofactors, was extracted from solution fluxes using the COBRApy functions:
 \vspace{-0.4cm} % \setlist{nolistsep}
@@ -104,7 +102,7 @@ as the objective function. Information about production and consumption of speci
 \end{enumerate}
 \vspace{-0.4cm} % \setlist{nolistsep}
 These functions filter reactions containing the selected metabolite and provide an overview of all producing/consuming flux rates involving that selected metabolite, respectively.
-Reactions that had the same absolute value in producing and consuming fluxes were excluded. Results were plotted on a pie chart. The reactions that had a lower proportion than 5\% of the total flux of the corresponding cofactor, were summed together and represented in the sector `Other consuming' or `Other producing', respectively.
+Reactions that had the same absolute value in producing and consuming fluxes were excluded. Results were plotted on a pie chart. The reactions that had a lower proportion than 2.2\% of the total flux of the corresponding cofactor, were summed together and represented in the sector `Other consuming' or `Other producing', respectively.
 
 % Finally, for some models the central carbon metabolism fluxes were visualized with Escher \cite{King2015}. On Escher platform it is possible
 % to create metabolic maps based on the reactions of a given GEM, which can then be fed with the simulated
