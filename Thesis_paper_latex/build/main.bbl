@@ -4100,6 +4100,82 @@
       \verb 10.1186/1752-0509-7-74
       \endverb
     \endentry
+    \entry{King2015a}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=28d450c30d5b17f10fb57452732b037d}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Zachary\bibnamedelima A.},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=226ca405f7e7e806dead85aa92ec3c47}{%
+           family={Dräger},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b05043062488d7f7270498dc64290c72}{%
+           family={Ebrahim},
+           familyi={E\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b34879986d1643878d3f725679c66a0a}{%
+           family={Sonnenschein},
+           familyi={S\bibinitperiod},
+           given={Nikolaus},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61beaf2f99876923aa52a2c5ad1b9c7f}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Nathan\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=671aeb8decdb8c2284aae5e2f2c9342b}{%
+           family={Palsson},
+           familyi={P\bibinitperiod},
+           given={Bernhard\bibnamedelima O.},
+           giveni={B\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=ded03838a36f6ef5a9e438ace6b46955}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={Paul\bibnamedelima P},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science (PLoS)}%
+      }
+      \strng{namehash}{4e3031c85da87521904b1ca189348824}
+      \strng{fullhash}{e57d44e26e8dac57e7355994572069e8}
+      \strng{bibnamehash}{4e3031c85da87521904b1ca189348824}
+      \strng{authorbibnamehash}{4e3031c85da87521904b1ca189348824}
+      \strng{authornamehash}{4e3031c85da87521904b1ca189348824}
+      \strng{authorfullhash}{e57d44e26e8dac57e7355994572069e8}
+      \strng{editorbibnamehash}{ded03838a36f6ef5a9e438ace6b46955}
+      \strng{editornamehash}{ded03838a36f6ef5a9e438ace6b46955}
+      \strng{editorfullhash}{ded03838a36f6ef5a9e438ace6b46955}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1553-7358}
+      \field{journaltitle}{PLOS Computational Biology}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Escher: A Web Application for Building, Sharing, and Embedding Data-Rich Visualizations of Biological Pathways}
+      \field{volume}{11}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{e1004321}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1004321
+      \endverb
+    \endentry
     \entry{Xu2016}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=a9f1e89449a8f9e0a4b65ee24d8f421d}{%

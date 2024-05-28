@@ -104,7 +104,7 @@ transketolase 2 ($0.04-0.3$ \unit{mmol/gDW/h}) and $40\%$ to phosphoketolase (fl
 The flux of transaldolase was predicted to be zero on all rates. Fructose biphosphate aldolase was predicted to increase from 
 $0.28$ to $1.15$ \unit{mmol/gDW/h}, representing $82\%$ of the carbon from D-fructose 6-phosphate. 
 Pyruvate decarboxylase represents $15\%$ and pyruvate dehydrogenase $59\%$ of the carbon from % This percent is a bit complicated bc there's mode mithocondrial pyruvate then transported there by pyruvate transport, 4% is produced by malic enzyme
-cytososlic pyruvate branching point having fluxes from $0.06$ to $0.5$ and $0.46-2.25$ \unit{mmol/gDW/h}, respectively (Figure \ref{rhto-GEM biomass max}.b).
+cytososlic pyruvate branching point having fluxes from $0.06$ to $0.5$ and $0.46-2.25$ \unit{mmol/gDW/h}, respectively (Figure \ref{rhto-GEM biomass max}.b). For an overview, Escher \cite{King2015a} map visualizing the metabolic pathways was used and is accessible from Github \url{https://github.com/maivehanni/BSc_thesis/blob/main/Escher_maps/rhto_central_glc_uptake_1.1.png}.
 The model did not predict any flux for ACL, instead it predicts that acetyl-CoA is produced through phosphoketolase. % for producing acetyl-CoA from citrate transported from mithocondria (TCA cycle), was zero. 
 \begin{figure}[H]
     \centering
@@ -170,17 +170,9 @@ Similarly to model rhto-GEM, it is predicted that NADPH is consumed by glutamate
 
 \textbf{Rt\_IFO0880}
 
-Rt\_IFO0880 also predicts higher exchange fluxes than experimentally measured (Figure \ref{fig:IFO0880_biomass_max}.a). Model predicted that over the predicted range of specific growth rates, specific O$_2$ uptake and CO$_2$ production fluxes are $0.5-3.1$, $1.1-6.8$ and $1.3-7.7$ \unit{mmol/gDW/h}, respectively.
-This model has two phosphoketolases, fructose-6-phosphate phosphoketolase (FPK) and xylulose-5-phosphate phosphoketolase (XPK), 
-but as models rhto-GEM and iRhtoC
-have one phosphoketolase, FPK and XPK fluxes have been summed together for easier comparison with other models.
-Model predictions differ from models rhto-GEM and iRhtoC by not having any flux in oxPPP and transketolase 2.
-Transketolase 1 represents 13\% of the carbon from glyceraldehyde 3-phosphate. Transaldolase represents 19\%, fructose-bisphosphate 
-aldolase 52\% and FPK 21\% carbon from D-glucose 6-phosphate. 
-XPK represents 100\% of carbon from D-xylulose 5-phosphate. Summed flux of XPK and FPK is from $0.18$ to $1.25$ \unit{mmol/gDW/h} over the rates.
-Pyruvate decarboxylase represents 7\% and pyruvate 
-dehydrogenase 58\% of carbon from cytososlic pyruvate branching point (Figure \ref{fig:IFO0880_biomass_max}.b).
-Similarly to rhto-GEM, this model also predicts the use of phosphoketolase and no use of ACL. 
+Rt\_IFO0880 also predicts higher exchange fluxes than experimentally measured (Figure \ref{fig:IFO0880_biomass_max}.a). Model predicted that over the predicted range of specific growth rates, specific O$_2$ uptake and CO$_2$ production fluxes are $0.5-3.1$, $1.1-6.8$ and $1.3-7.7$ \unit{mmol/gDW/h}, respectively. 
+This model has two phosphoketolases, fructose-6-phosphate phosphoketolase (FPK) and xylulose-5-phosphate phosphoketolase (XPK), but as models rhto-GEM and iRhtoC have one phosphoketolase, FPK and XPK fluxes have been summed together for easier comparison with other models. Model predictions differ from models rhto-GEM and iRhtoC by not having any flux in oxPPP and transketolase 2. Transketolase 1 represents 13\% of the carbon from glyceraldehyde 3-phosphate. Transaldolase represents 19\%, fructose-bisphosphate aldolase 52\% and FPK 21\% carbon from D-glucose 6-phosphate. XPK represents 100\% of carbon from D-xylulose 5-phosphate. Summed flux of XPK and FPK is from $0.18$ to $1.25$ \unit{mmol/gDW/h} over the rates.
+Pyruvate decarboxylase represents 7\% and pyruvate dehydrogenase 58\% of carbon from cytososlic pyruvate branching point (Figure \ref{fig:IFO0880_biomass_max}.b). The Escher map visualizing the pathways is accessible from \url{https://github.com/maivehanni/BSc_thesis/blob/main/Escher_maps/Rt_IFO0880_map_default.png}. Similarly to rhto-GEM, this model also predicts the use of phosphoketolase and no use of ACL. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{IFO0880_biomass_max.png}
@@ -188,7 +180,7 @@ Similarly to rhto-GEM, this model also predicts the use of phosphoketolase and n
     \label{fig:IFO0880_biomass_max}
 \end{figure}
 
-In NADPH production and consumption on different rates there are no significant differences. Around $90\%$ of NADPH is produced by alcohol dehydrogenase (ID: ALCD2y, Nicotinamide adenine dinucleotide phosphate[c] + Ethanol[c] => H+[c] + Nicotinamide adenine dinucleotide phosphate - reduced[c] + Acetaldehyde[c]) on all rates (Figure \ref{fig:IFO0880_biomass_max_NADPH_max}). This is very different from other models. 
+In NADPH production and consumption on there are no significant differences across the growth rates. However, around $90\%$ of NADPH is produced by alcohol dehydrogenase (ID: ALCD2y, Nicotinamide adenine dinucleotide phosphate[c] + Ethanol[c] => H+[c] + Nicotinamide adenine dinucleotide phosphate - reduced[c] + Acetaldehyde[c]) on all rates (Figure \ref{fig:IFO0880_biomass_max_NADPH_max}). This is very different from other models. 
 On all rates, NADPH is consumed by glutamate dehydrogenase by around 35\% similarly to previous models. Around 7\% is consumed by fatty acyl CoA synthase n C80CoA lumped reaction and 10\% is the summed flux of five other fatty acyl CoA synthases (n C100CoA, n C120CoA, n C140CoA, n C160CoA and n C180CoA). The total flux of FAS is around 17\% and is comparable to iRhtoC.
 %(That indicates unrealistic loops)
 \begin{figure}[H]
@@ -208,10 +200,9 @@ On all rates, NADPH is consumed by glutamate dehydrogenase by around 35\% simila
 Exchange flux predictions are almost the same as with model Rt\_IFO0880. Model predicted that over the predicted range of specific growth rates, specific O$_2$ uptake and CO$_2$ production fluxes are $1.1-6.8$ and $1.3-7.7$ \unit{mmol/gDW/h}, respectively (Figure \ref{fig:Rt_IFO0880_LEBp2023_biomass_max}.a).
 From D-glucose 6-phosphate branching point 9\% of the carbon is represented by oxPPP. 
 Transketolase 1 and 2 represent very
-low carbon percentage, only 0.3\% and 1.3\%, from glyceraldehyde 3-phosphate branching point, respectively. Transaldolase represents
-0.6\%, transketolase 2 2\% and fructose-bisphosphate aldolase 89\% from D-glucose 6-phosphate. Pyruvate decarboxylase represents 5\% 
-and pyruvate dehydrogenase 62\% carbon from cytososlic pyruvate. %cytosolic
-33\% of carbon from mithocondrial citrate is represented by ACL. (\ref{fig:Rt_IFO0880_LEBp2023_biomass_max}.B)
+low carbon percentage, only 0.3\% and 1.3\%, from glyceraldehyde 3-phosphate branching point, respectively. Transaldolase represents 0.6\%, transketolase 2 2\% and fructose-bisphosphate aldolase 89\% from D-glucose 6-phosphate. Pyruvate decarboxylase represents 5\% and pyruvate dehydrogenase 62\% carbon from cytososlic pyruvate. %cytosolic
+33\% of carbon from mithocondrial citrate is represented by ACL. (\ref{fig:Rt_IFO0880_LEBp2023_biomass_max}.b)
+The Escher map visualizing the pathways is accessible from \url{https://github.com/maivehanni/BSc_thesis/blob/main/Escher_maps/Rt_IFO0880_jsb_map_glc_uptake_1.1.png}.
 On all growth rates the use of ACL is predicted instead of phosphoketolase, which is similar with the model iRhtoC. 
 (As this model is an updated version of Rt\_IFO0880, it also has two phosphoketolases - FPK and XPK, which fluxes
 have been summed together and represented as phosphoketolase.) 
@@ -252,7 +243,7 @@ production of acetyl-CoA. The models rhto-GEM and Rt\_IFO0880 produced acetyl-Co
 of Rt\_IFO0880 (Rt\_IFO0880\_LEBp2023) predicted the production of acetyl-CoA using ACL. In many studies, ACL has been found to be present in oleaginous yeast, whereas phosphoketolase has been predicted to be active in \textit{R. toruloides} during growth on xylose by \cite{Pinheiro2020, Rekena2023} and on glucose by \cite{Rekena2023}, but in both studies protein levels of ACL were also reported and in \cite{Pinheiro2020} ACL was found in even higher levels under nitrogen limitation, when lipid accumulation was increased.  % MAybe add nmore what has been found in these studies
 In experiments where phosphoketolase pathways were transferred to the oleaginous model yeast \textit{Y. lipolytica}, the lipid production in the engineered yeast increased by 53\% when grown on glucose \cite{Xu2016}.
 
-NADPH sources also differ among model predictions. On all growth rates, models rhto-GEM and iRhtoC predict that most of the NADPH is produced by the oxidative pentose phosphate pathway and $\sim 6\%$ by ethylenetetrahydrofolate dehydrogenase in rhto-GEM and by malic enzyme in iRhtoC. Model Rt\_IFO0880 predicts that most of the NADPH is produced by alcohol dehydrogenase and Rt\_IFO0880\_LEBp2023 predicts that on the lowest growth rate NADPH is mainly ($\sim 85\%$) produced through aldehyde dehydrogenase and on all other rates, $\sim 75\%$ is produced by alcohol dehydrogenase and $\sim 15\%$ by oxPPP. Malic enzyme, which is considered a key enzyme in the regeneration of NADPH for lipid biosynthesis \cite{Ratledge2002}, was not predicted to be the primary NADPH producer in any of the models. However, this is in accordance with the proteomics data of \textit{R. toruloides} grown on xylose by \cite{Pinheiro2020}, where it was found that most of the NADPH is produced in oxPPP. It was also suggested by Wasylenko et al. 2015 that in \textit{Yarrowia lipolytica} the oxidative pentose phosphate pathway is the primary source of NADPH during lipid accumulation on growth on glucose \cite{Wasylenko2015}. Still, the results by Li et al. 2012 indicated that the lipid content in \textit{Rhodotorula glutinis} grown on glucose increased from 18.7\% to 39.4\% thanks to overexpression of malic enzyme, indicating importance of ME \cite{Li2012}. These results in this study as well as in others, demonstrate the carbon source-dependent differences in yeast metabolism.
+NADPH sources also differ among model predictions. On all growth rates, models rhto-GEM and iRhtoC predict that most of the NADPH is produced by the oxidative pentose phosphate pathway and $\sim 6\%$ by ethylenetetrahydrofolate dehydrogenase in rhto-GEM and by malic enzyme in iRhtoC. Model Rt\_IFO0880 predicts that most of the NADPH is produced by alcohol dehydrogenase and Rt\_IFO0880\_LEBp2023 predicts that on the lowest growth rate NADPH is mainly ($\sim 85\%$) produced through aldehyde dehydrogenase and on all other rates, $\sim 75\%$ is produced by alcohol dehydrogenase and $\sim 15\%$ by oxPPP. Malic enzyme, which is considered a key enzyme in the regeneration of NADPH for lipid biosynthesis \cite{Ratledge2002}, was not predicted to be the primary NADPH producer in any of the models. However, this is in accordance with the proteomics data of \textit{R. toruloides} grown on xylose by \cite{Pinheiro2020}, where it was predicted by the rhto-GEM that most of the NADPH is produced in oxPPP. It was also suggested by Wasylenko et al. 2015 that in \textit{Yarrowia lipolytica} the oxidative pentose phosphate pathway is the primary source of NADPH during lipid accumulation on growth on glucose \cite{Wasylenko2015}. Still, the results by Li et al. 2012 indicated that the lipid content in \textit{Rhodotorula glutinis} grown on glucose increased from 18.7\% to 39.4\% thanks to overexpression of malic enzyme, indicating importance of ME \cite{Li2012}. These results in this study as well as in others, demonstrate the carbon source-dependent differences in yeast metabolism.
 
 % Predicted consuming fluxes inidicated that in model rhto-GEM NADPH is primarily consumed by fatty acid synthases and glutamate dehydrogenase, this is in accordance with the predictions with an enzyme-constrained \textit{R. toruloides} model by \cite{Rekena2023}.
 
@@ -299,7 +290,7 @@ Same experimentally measured specific glucose uptake rates were used throughout 
 %     \label{fig:iRhtoC_nm_NADPH1}
 % \end{figure}
 % \textbf{Rt\_IFO0880}
-As a result, model Rt\_IFO0880 optimized for NGAM minimization predicted the production of NAPDH differently - around $90\%$ of NADPH is produced by homoserine dehydrogenase on rates $0.08$ and $0.17$ \unit{1/h} and on other rates by alcohol dehydrogenase (Figures \ref{fig:IFO0880_nm_NADPH} and \ref{fig:IFO0880_nm_NADPH1}). NADH consuming fluxes did not change, like previously, majority is being consumed by glutamate dehydrogenase and 17\% by FAS.  
+As a result, model Rt\_IFO0880 optimized for NGAM minimization predicted the production of NAPDH differently - around $90\%$ of NADPH is produced by homoserine dehydrogenase on rates $0.08$ and $0.17$ \unit{1/h} and on other rates by alcohol dehydrogenase (Figures \ref{fig:IFO0880_nm_NADPH} and \ref{fig:IFO0880_nm_NADPH1}). NADPH consuming fluxes did not change, like previously, majority is being consumed by glutamate dehydrogenase and 17\% by FAS.  
 
 \begin{figure}[H]
     \centering

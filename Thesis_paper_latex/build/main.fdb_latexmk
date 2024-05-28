@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1716840844 "build/main.bcf" "build/main.bbl" "build/main" 1716898239 0
-  "./bibliography.bib" 1716829212 44064 249863a8fa5ea71458f12304f015ecda ""
-  "build/main.bcf" 1716898238 115550 04a9e61696c288f330765dfa3310ac72 "pdflatex"
+["biber build/main"] 1716899727 "build/main.bcf" "build/main.bbl" "build/main" 1716899862 0
+  "./bibliography.bib" 1716898755 44700 7763e6a0cd2061995dc3d94496d14f47 ""
+  "build/main.bcf" 1716899859 115616 1442c7df976bd3c19e41a413253cade0 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1716898229 "c:/Users/Maive/Desktop/BSc_loputoo/Thesis_paper_latex/main.tex" "build/main.pdf" "main" 1716898239 0
+["pdflatex"] 1716899849 "c:/Users/Maive/Desktop/BSc_loputoo/Thesis_paper_latex/main.tex" "build/main.pdf" "main" 1716899862 0
   "Pictures/FBA_solution_space.jpg" 1714332345 82309 2f07d9ef5ad949c0d6f9a675014f7a31 ""
   "Pictures/GEMs.png" 1715955538 162221 e7de385250e0eb8556b19acf538614ab ""
   "Pictures/IFO0880_biomass_max.png" 1716713537 110933 1ad59810da9bb2f537c81a746b9abc45 ""
@@ -29,12 +29,12 @@
   "acknowledgements.tex" 1716364350 957 4e7b02432ba1c0f2bab08f7c60ad1190 ""
   "aims_of_the_thesis.tex" 1716752643 876 2e6a7fcca7b21db80f1d58e845ef3e58 ""
   "annotatsioon.tex" 1716840159 3082 56e00cd272f97a0d38416074bfbb4cd6 ""
-  "appendices.tex" 1716825578 10607 323bca5ad787874b6819e9854fa1e56d ""
-  "build/main.aux" 1716898238 39720 abdb05787093c4ea60b875af669d1036 "pdflatex"
-  "build/main.bbl" 1716840893 176001 490e63da9cc54e23546daf66bba52317 "biber build/main"
-  "build/main.out" 1716898238 5244 8b81ae66aef267216e8349dd7113f8a3 "pdflatex"
-  "build/main.run.xml" 1716898238 2348 e48e2c7089d179f54136b9872e2b9faf "pdflatex"
-  "build/main.toc" 1716898238 2321 fbb1b5615f32fe507212fed334ea6733 "pdflatex"
+  "appendices.tex" 1716899705 10607 950279b828597658ac93b7058dac26d3 ""
+  "build/main.aux" 1716899859 39848 bb962ecdaaa8089c406874cd798a72bc "pdflatex"
+  "build/main.bbl" 1716899733 179192 52babf56c2d33fec440ec8aa7a77f51e "biber build/main"
+  "build/main.out" 1716899859 5244 8b81ae66aef267216e8349dd7113f8a3 "pdflatex"
+  "build/main.run.xml" 1716899859 2348 e48e2c7089d179f54136b9872e2b9faf "pdflatex"
+  "build/main.toc" 1716899859 2321 fbb1b5615f32fe507212fed334ea6733 "pdflatex"
   "c:/Users/Maive/Desktop/BSc_loputoo/Thesis_paper_latex/main.tex" 1716890204 3140 304627067b2c7e1acd3f5b723dd2f009 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1699296750 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1699297510 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -211,8 +211,8 @@
   "declaration.tex" 1716838609 590 9b54dac66c23e2629f746ba88c64825a ""
   "introduction.tex" 1716840159 4445 0e29564be7228a6faa80df5b6c0d35c4 ""
   "main.tex" 1716890204 3140 304627067b2c7e1acd3f5b723dd2f009 ""
-  "materials_and_methods.tex" 1716873476 11255 9141dcc99d04ae7dea576fe5bd9ace56 ""
-  "results.tex" 1716898225 37043 b96edccb7295fe30eb000aad69bbb9fd ""
+  "materials_and_methods.tex" 1716899848 11253 73c43254bbf5e47ccf43b1b8174df722 ""
+  "results.tex" 1716899705 37612 17702ab27024272f473f4e2b484b65fb ""
   "taltech_bsc.sty" 1715793321 3374 e2767b41efb6c38655bc6106625ed67e ""
   "theoretical_background.tex" 1716898225 49127 994a0ffaea6c91f810d7d00971e06b3f ""
   (generated)

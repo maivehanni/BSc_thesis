@@ -10,7 +10,7 @@ Thesis_paper_latex/
 .vscode/
 Thesis_pdf/
 build/
-# .gitignore
+.gitignore
 gurobi.log
 Results/
 Kokkuvõte/
@@ -20,3 +20,4 @@ Python_scripts/__pycache__/
 Python_scripts/Knock_outs/
 Python_scripts/Training_simulations/
 Python_scripts/Thesis_simulations_all_models/functions_test.ipynb
+Hanni_BSc_thesis_Rt.asice
