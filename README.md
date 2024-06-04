@@ -1,1 +1,2 @@
-This repository contains bachelor thesis files on "Flux balance analysis of continuous cultivation for investigating the lipogenesis metabolism in Rhodotorula toruloides". 
+This repository contains bachelor thesis files on "Comparison of genome-scale metabolic models for investigating
+lipogenesis metabolism in Rhodotorula toruloides". 
